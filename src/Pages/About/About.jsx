@@ -1,14 +1,13 @@
-import './HomePage.css'
-
 import Footer from "../../Components/Footer/Footer";
 import Header from "../../Components/Header/Header";
-import HomePageBody from "./HomePageBody";
+import AboutBody from "./AboutBody";
 
-export default function HomePage() {
+
+export default function About() {
   return (
-    <div className='relative'>
+    <div className=" bg-[#F3F6F1]">
         <Header />
-        <HomePageBody />
+        <AboutBody />
         <Footer />
     </div>
   )

@@ -1,0 +1,8 @@
+.Life-Hero{
+    background: url('./Assets/Hero.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.img:hover .img-hover{
+    display: inline;
+}
