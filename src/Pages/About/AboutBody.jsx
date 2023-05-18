@@ -1,11 +1,16 @@
 import SomethingOven from "../../Components/SomethingOven/SomethingOven";
+import TypewriterSection from "../../Components/TypewriterSection/TypewriterSection";
 import SugarGirl from "./Assets/SugarGirl.png";
+
 
 export default function AboutBody() {
   return (
     <div className="mt-[15vh]">
-      <section className="bg-[#B5C7A5] mb-[2vh] text-[#A62B00] text-center font-normal text-[3.2rem] leading-[120%] py-[4vh]">
-        <h1>About Me</h1>
+      <section>
+        <TypewriterSection
+            FirstText='A'
+            SecondText="bout Me"
+         />
       </section>
 
       <section className="relative flex hover:flex-row-reverse items-center py-[5vh]">
@@ -76,9 +81,11 @@ export default function AboutBody() {
               </p>
             </div>
           </div>
-          <hr className=" border-solid border-[0.5px] my-[2vh]"/>
-          <div  className="text-right">
-          <button className=" border-solid border-[0.5px] border-[#000000] px-[2%] py-[0.5vh] text-[#370E00] font-IBM font-normal text-[1.2rem] leading-[150%] ">Let’s Work Together</button>
+          <hr className=" border-solid border-[0.5px] my-[2vh]" />
+          <div className="text-right">
+            <button className=" border-solid border-[0.5px] border-[#000000] px-[2%] py-[0.5vh] text-[#370E00] font-IBM font-normal text-[1.2rem] leading-[150%] ">
+              Let’s Work Together
+            </button>
           </div>
         </div>
       </section>
