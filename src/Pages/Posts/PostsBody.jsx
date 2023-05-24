@@ -22,23 +22,23 @@ export default function PostsBody() {
         </div>
       </section>
 
-      <section className='px-[15%] flex justify-between items-center'>
+      <section className='px-[15%] flex justify-between items-center pb-[2vh]'>
         <h1 className='text-[#A62B00] font-normal text-[3.5rem] leading-[120%] '>Bagels</h1>
         <div>
             <AiOutlineSearch className="w-full" />
         </div>
       </section>
       
-      <section className='px-[15%]'>
-        <p>Bagels are a type of bread product that is boiled before it is baked, giving it a chewy texture.</p>
-        <p>Traditionally, bagels are made with a sourdough starter, which adds flavor and texture to the final product.</p>
+      <section className='px-[15%] font-IBM'>
+        <b className='text-[#370E00] font-semibold text-[1.1rem] leading-[150%] pb-[2vh]'>Bagels are a type of bread product that is boiled before it is baked, giving it a chewy texture.</b>
+        <p className='text-[#370E00] font-normal text-[1.1rem] leading-[150%] pb-[2vh]'>Traditionally, bagels are made with a sourdough starter, which adds flavor and texture to the final product.</p>
         
-        <div>
-            <PostSlide />
+        <div className='pb-[2vh]'>
+            <PostSlide /> 
         </div>
-        <i>"Bagels are proof that God loves us and wants us to be happy."</i>
-        <p>Bagels are a type of bread product that are known for their unique shape and texture. They are made by boiling the dough in water and then baking it in an oven. Bagels are traditionally associated with Jewish cuisine, although they are now enjoyed by people all over the world. Bagels have a chewy texture and a dense, slightly sweet flavor. They are often eaten as snack, plain or with various toppings such as cream cheese, butter, jam, smoked salmon, or deli meats.</p>
-        <p>There are flavors and styles, including plain, sesame, poppy seed, onion, garlic, cinnamon raisin, and everything bagels. They can be found in most bakeries and supermarkets, and many people enjoy making their own bagels at home.</p>
+        <i className='text-[#370E00] font-semibold text-[1.1rem] leading-[150%]' >"Bagels are proof that God loves us and wants us to be happy."</i>
+        <p className='text-[#370E00] font-normal text-[1.1rem] text-justify leading-[150%] pt-[1vh] pb-[1vh]'>Bagels are a type of bread product that are known for their unique shape and texture. They are made by boiling the dough in water and then baking it in an oven. Bagels are traditionally associated with Jewish cuisine, although they are now enjoyed by people all over the world. Bagels have a chewy texture and a dense, slightly sweet flavor. They are often eaten as snack, plain or with various toppings such as cream cheese, butter, jam, smoked salmon, or deli meats.</p>
+        <p className='text-[#370E00] font-normal text-[1.1rem] text-justify leading-[150%] pb-[2vh]'>There are flavors and styles, including plain, sesame, poppy seed, onion, garlic, cinnamon raisin, and everything bagels. They can be found in most bakeries and supermarkets, and many people enjoy making their own bagels at home.</p>
         <Poststags />
 
         <div>
