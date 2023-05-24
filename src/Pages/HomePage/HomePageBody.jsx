@@ -32,9 +32,7 @@ export default function HomePageBody() {
           </div>
         </div>
 
-        <div className="w-[30%]">
-          <FoodCard />
-        </div>
+        <FoodCard />
       </section>
       <section className="px-[5%] mt-[4vh]">
         <div>
@@ -60,15 +58,9 @@ export default function HomePageBody() {
           </p>
         </div>
         <div className="flex gap-[3%]">
-          <div className="w-[30%]">
             <FoodCard />
-          </div>
-          <div className="w-[30%]">
             <FoodCard />
-          </div>
-          <div className="w-[30%]">
             <FoodCard />
-          </div>
         </div>
       </section>
 
