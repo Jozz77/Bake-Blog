@@ -19,17 +19,19 @@ export default function HomePageBody() {
   return (
     <div className="">
       <section className="px-[5%] flex justify-between items-center mt-[15vh] ">
-        <div className="Life-Hero py-[13vh] w-[65%]">
-          <div>
-            <h2 className="font-semibold text-center text-[#FFFFFF] px-[7%] text-[3.8rem] leading-[130%]">
-              When Life Gives You Flour and Butter, You Better Bake
-            </h2>
-            <Link to="">
-              <button className="text-[#370E00] font-normal text-[1.3rem] w-[30%] mt-[5vh] mx-[35%] leading-[24px] bg-[#F3F6F1]  py-[1.5vh] ">
-                All Recipes
-              </button>
-            </Link>
-          </div>
+        <div className="Life-Hero relative py-[13vh] w-[65%]">
+         <div>
+          <div className="Life-Gives">
+              <h2 className="font-semibold text-center text-[#FFFFFF] px-[7%] text-[3.8rem] leading-[130%]">
+                When Life Gives You Flour and Butter, You Better Bake
+              </h2>
+              <Link to="">
+                <button className="text-[#370E00] font-normal text-[1.3rem] w-[30%] mt-[5vh] mx-[35%] leading-[24px] bg-[#F3F6F1]  py-[1.5vh] ">
+                  All Recipes
+                </button>
+              </Link>
+            </div>
+         </div>
         </div>
 
         <FoodCard />

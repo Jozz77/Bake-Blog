@@ -2,7 +2,32 @@
     background: url('./Assets/Hero.png');
     background-repeat: no-repeat;
     background-size: cover;
+    transition: all 0.3s ease-in-out;
+    transform: translateY(0);
+    height: 100%;
 }
 .img:hover .img-hover{
     display: inline;
+}
+
+@keyframes movingTopToBottom {
+    0% {
+      margin-top: -100%;
+      z-index: -1;
+    }
+     50% {
+      margin-top: -50%;
+      z-index: -1;
+    }
+    100% {
+      margin-top: 0;
+      z-index: 1;
+    }
+  }
+.Life-Gives{
+    animation: movingTopToBottom 1s linear ;
+    -webkit-animation: movingTopToBottom linear 1s ;
+    /* position: absolute; */
+    /* transform: translateY(100px);
+   transition: all 0.3s ease-in-out; */
 }

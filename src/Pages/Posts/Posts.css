@@ -1,0 +1,16 @@
+.swiper-pagination{
+    position: absolute !important;
+    top: 93% !important;
+}
+.swiper-pagination-bullet {
+    background-color: transparent !important;
+    transform: scale(250%);
+    border: 1px solid #fd8255;
+    margin-right: 2% !important;
+  }
+  .swiper-pagination-bullet-active {
+    background: #B5C7A5 !important;
+    border: none;
+    
+  }
+  

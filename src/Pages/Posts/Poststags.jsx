@@ -1,6 +1,7 @@
 import { ImFacebook } from "react-icons/im";
 import { CiTwitter } from "react-icons/ci";
 import { AiOutlineInstagram } from "react-icons/ai";
+import { AiOutlineHeart } from "react-icons/ai";
 
 
 export default function Poststags() {
@@ -15,10 +16,16 @@ export default function Poststags() {
             <CiTwitter className="text-[1.2rem] text-[#370E00]" />
           </div>
           <hr />
-          <div className="flex gap-[2%] pt-[1vh] text-[#370E00] font-normal text-[1.1rem] text-justify leading-[150%]">
-            <p>0 views</p>
-            <p>0 comments</p>
+          <div className="flex justify-between items-center py-[2vh] w-full">
+            <div className="flex gap-[2%] w-[30%] pt-[1vh] text-[#370E00] font-normal text-[1.1rem] text-justify leading-[150%]">
+              <p>0 views</p>
+              <p>0 comments</p>
+            </div>
+            <div>
+              <AiOutlineHeart />
+            </div>
           </div>
+          
     </div>
   )
 }
