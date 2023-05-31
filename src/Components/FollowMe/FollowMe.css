@@ -1,18 +1,92 @@
 .description{
    opacity: 0;  
-   transition: all 0.3s ease-in-out;
+   /* transition: all 0.3s ease-in-out 2s; */
+  
 }
 .description.show{
     opacity: 1;
-    pointer-events: visible;
+    /* pointer-events: visible; */
+    transform: translate(0, 0);
 }
 .description-content{
-    transform: translateY(200px);
-   transition: all 0.3s ease-in-out;
+    /* transform: translateY(200px);
+   transition: all 0.3s ease-in-out 2s; */
+   transform: translate(-100%, 0);
+   transition: transform 1.5s ease;
 }
 .description.description.show .description-content{
-    transform: translateY(0);
+    transform: translate(0, 0);
 }
 /* .content:hover{
     transform: translateY(0);
 } */
+.des-content{
+    transform: translate(-100%, 0);
+    transition: transform 0.5s ease;
+}
+.follow:hover .des-content{
+    transform: translate(0, 0);
+    opacity: 1;
+}
+/* new */
+.follow{
+    position: relative;
+    overflow: hidden;
+}
+.follow2{
+    position: relative;
+    overflow: hidden;
+}
+.des-content2{
+    opacity: 0;
+    animation-name: fadeFromtop;
+    -webkit-animation-name: fadeFromtop;
+    animation-duration: 800ms;
+    -webkit-animation-duration: 800ms;
+    animation-timing-function: ease;
+    -webkit-animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+
+.follow2:hover .des-content2{
+    animation-name: fadeFromBottom;
+    -webkit-animation-name: fadeFromBottom;
+    animation-duration: 800ms;
+    -webkit-animation-duration: 800ms;
+    animation-timing-function: ease;
+    -webkit-animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes fadeFromBottom  {
+    0%{
+        opacity:0;
+        -webkit-transform: translateY(100%);
+    
+        transform: translateY(100%);
+    }
+    100%{
+        opacity: 1;
+        -webkit-transform: translateY(0px);
+      
+        transform: translateY(0px);
+        display: block;
+    }
+}
+@keyframes fadeFromtop  {
+0%{
+    opacity:1;
+    -webkit-transform: translateY(0px);
+   
+    transform: translateY(0px);
+}
+100%{
+    opacity: 0;
+    -webkit-transform: translateY(100%);
+
+   
+    transform: translateY(100%);
+}
+}
