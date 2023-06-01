@@ -4,11 +4,11 @@
     overflow: hidden;
 }
 /* top */
-.des-content-top{
+.des-content-topp{
     transform: translateY(-100%);
     transition: transform 0.5s ease;
 }
-.follow:hover .des-content-top{
+.follow:hover .des-content-topp{
     transform: translate(0);
     opacity: 1;
 }

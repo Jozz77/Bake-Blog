@@ -63,8 +63,8 @@ export default function HomePageBody() {
         </div>
       </section>
 
-      <section className="px-[5%] flex relative py-[5vh]">
-        <div className="w-[50%] mr-[-5%] my-[1.5%] py-[1.5vh] bg-[#F3F6F1] z-[1] md:my-[3%] md:py-[2vh] lg:my-[3%] xl:py-[6vh]">
+      <section className="sugar-container px-[5%] flex relative py-[5vh]">
+        <div className="sugar w-[50%] mr-[-5%] my-[1.5%] py-[1.5vh] bg-[#F3F6F1] z-[1] md:my-[3%] md:py-[2vh] lg:my-[3%] xl:py-[6vh]">
           <h2 className="text-[#A62B00] pb-[0.5vh] font-normal text-[1.2rem] leading-[120%] w-[85%] md:w-[80%] md:text-[1.5rem] lg:w-[90%] lg:pb-[1vh] lg:text-[2.1rem] xl:w-[70%] xl:text-[2.6rem] ">
             Sugar, Spice and Everything Nice
           </h2>
@@ -86,7 +86,7 @@ export default function HomePageBody() {
             About Me
           </Link>
         </div>
-        <div className="w-[50%] ">
+        <div className="sugarImg w-[50%] ">
           <img className="w-full" src={SugarGirl} alt="Girl with cakes" />
         </div>
       </section>

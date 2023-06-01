@@ -38,3 +38,26 @@
   animation: movingTopToBottom 1s linear;
   -webkit-animation: movingTopToBottom linear 1s;
 }
+/* animation 2 */
+.sugar-container{
+  overflow: hidden;
+}
+.sugar{
+  transform: translateX(0%);
+    transition: transform 0.5s ease;
+}
+.sugar-container:hover .sugar{
+  transform: translateX(100%);
+  padding-left: 5%;
+  padding-right: 0;
+}
+
+.sugarImg{
+  transform: translate(0%);
+    transition: transform 0.5s ease;
+}
+.sugar-container:hover .sugarImg{
+  transform: translateX(-100%);
+  margin-left: 10%;
+  width: 60%;
+}

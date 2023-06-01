@@ -1,10 +1,8 @@
-import { useState } from "react";
 import Image1 from "./Assets/Image1.png";
 import FollowDescription from "./FollowDescription";
 import "./FollowMe.css";
 
 export default function FollowMe() {
-  const [show, setShow] = useState(false);
 
   return (
     <section className="px-[5%]  py-[5vh]">
@@ -17,7 +15,7 @@ export default function FollowMe() {
             <img src={Image1} className="w-full" alt="Braunie Image" />
           </div>
 
-          <div className="des-content-top absolute top-0 left-0 bottom-0 right-0 ">
+          <div className="des-content-topp absolute top-0 left-0 bottom-0 right-0 ">
             <FollowDescription
               title="English muffins"
               text="This are type of bread product that is made using a sourdough starter, which adds flavor and texture to it. The dough is rolled out and cut into rounds, then cooked on a griddle or in a pan before being baked in the oven."
