@@ -12,11 +12,17 @@ export default function FollowMe() {
         Follow Me <i>@myjoygirl</i>
       </h3>
       <div className="flex  gap-[2%] justify-between">
-        <div className="relative content" onMouseOver={() => setShow(true)}>
-          <div className="w-[23]">
+        <div className="follow relative">
+          <div className="w-[23] ">
             <img src={Image1} className="w-full" alt="Braunie Image" />
           </div>
-          <FollowDescription show={show} onClose={() => setShow(false)} />
+
+          <div className="des-content-top absolute top-0 left-0 bottom-0 right-0 ">
+            <FollowDescription
+              title="English muffins"
+              text="This are type of bread product that is made using a sourdough starter, which adds flavor and texture to it. The dough is rolled out and cut into rounds, then cooked on a griddle or in a pan before being baked in the oven."
+            />
+          </div>
         </div>
 
         <div className="follow relative">
@@ -24,41 +30,39 @@ export default function FollowMe() {
             <img src={Image1} className="w-full" alt="Braunie Image" />
           </div>
 
-          <div className=" des-content absolute top-0 left-0 bottom-0 right-0 px-[5%]">
-            <div className=" bg-[#B5C7A5] absolute top-0 left-0 bottom-0 right-0">
-              <h1>Fine bread</h1>
-              <p className="text-[#050504] font-normal text-[1rem] leading-[140%]">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Mollitia sunt architecto animi magnam odio expedita distinctio
-                natus veniam laudantium,
-              </p>
-              <button>Read More</button>
-            </div>
+          <div className="des-content-right absolute top-0 left-0 bottom-0 right-0 ">
+          <FollowDescription
+              title="Croissants"
+              text="These are a type of pastry that is made using a laminated dough, which is a dough that has been rolled out and layered with butter. The dough is then rolled up and left to ferment overnight, which adds flavor to it."
+            />
           </div>
         </div>
 
-        <div className="w-[23]">
-          <img src={Image1} className="w-full" alt="Braunie Image" />
-        </div>
-        
-        <div className="follow2 relative">
+        <div className="follow relative">
           <div className="w-[23] ">
             <img src={Image1} className="w-full" alt="Braunie Image" />
           </div>
 
-          <div className=" des-content2 absolute top-0 left-0 bottom-0 right-0 px-[5%]">
-            <div className=" bg-[#B5C7A5] absolute top-0 left-0 bottom-0 right-0">
-              <h1>Fine bread</h1>
-              <p className="text-[#050504] font-normal text-[1rem] leading-[140%]">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Mollitia sunt architecto animi magnam odio expedita distinctio
-                natus veniam laudantium,
-              </p>
-              <button>Read More</button>
-            </div>
+          <div className="des-content-bottom absolute top-0 left-0 bottom-0 right-0 ">
+          <FollowDescription
+              title="Sponge Cakes"
+              text="They are made using a simple recipe that typically includes eggs, sugar, flour, and sometimes flavorings such as vanilla extract or lemon zest. Sponge cakes get their airy texture from the eggs, which are whipped."
+            />
           </div>
         </div>
-       
+
+        <div className="follow relative">
+          <div className="w-[23] ">
+            <img src={Image1} className="w-full" alt="Braunie Image" />
+          </div>
+
+          <div className="des-content-left absolute top-0 left-0 bottom-0 right-0 ">
+            <FollowDescription
+              title="Burger"
+              text="The key elements of a great burger is the bun. This is soft and slightly sweet, with enough structure to hold up to the juicy patty and toppings without falling apart. The patty is cooked with a crispy exterior and juicy and flavorful."
+            />
+          </div>
+        </div>
       </div>
       <hr className="mt-[2vh] border-solid  border-[0.5px]" />
     </section>

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import SugarGirl from "./Assets/SugarGirl.png";
+import Image2 from "./Assets/Image2.png";
 import Braunie from "./Assets/Braunie.png";
 
 export default function SomethingOven() {
@@ -20,7 +20,7 @@ export default function SomethingOven() {
             <img src={Braunie} className="w-[15%] my-auto  mx-[auto]" alt="Braunie Image" />
             <img
               className="img-hover absolute w-full mx-[auto] hidden top-0 left-0 bottom-0 right-0"
-              src={SugarGirl}
+              src={Image2}
               alt="Girl with cakes"
             />
           </div>

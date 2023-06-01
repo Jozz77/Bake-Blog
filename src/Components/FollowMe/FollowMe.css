@@ -1,39 +1,48 @@
-.description{
-   opacity: 0;  
-   /* transition: all 0.3s ease-in-out 2s; */
-  
-}
-.description.show{
-    opacity: 1;
-    /* pointer-events: visible; */
-    transform: translate(0, 0);
-}
-.description-content{
-    /* transform: translateY(200px);
-   transition: all 0.3s ease-in-out 2s; */
-   transform: translate(-100%, 0);
-   transition: transform 1.5s ease;
-}
-.description.description.show .description-content{
-    transform: translate(0, 0);
-}
-/* .content:hover{
-    transform: translateY(0);
-} */
-.des-content{
-    transform: translate(-100%, 0);
-    transition: transform 0.5s ease;
-}
-.follow:hover .des-content{
-    transform: translate(0, 0);
-    opacity: 1;
-}
-/* new */
+
 .follow{
     position: relative;
     overflow: hidden;
 }
-.follow2{
+/* top */
+.des-content-top{
+    transform: translateY(-100%);
+    transition: transform 0.5s ease;
+}
+.follow:hover .des-content-top{
+    transform: translate(0);
+    opacity: 1;
+}
+/* bottom */
+.des-content-bottom{
+    transform: translateY(100%);
+    transition: transform 0.5s ease;
+}
+.follow:hover .des-content-bottom{
+    transform: translate(0);
+    opacity: 1;
+}
+/* right */
+.des-content-right{
+    transform: translateX(100%);
+    transition: transform 0.5s ease;
+}
+.follow:hover .des-content-right{
+    transform: translate(0);
+    opacity: 1;
+}
+/* left */
+.des-content-left{
+    transform: translateX(-100%);
+    transition: transform 0.5s ease;
+}
+.follow:hover .des-content-left{
+    transform: translate(0);
+    opacity: 1;
+}
+
+/* new */
+
+/* .follow2{
     position: relative;
     overflow: hidden;
 }
@@ -89,4 +98,4 @@
    
     transform: translateY(100%);
 }
-}
+} */
