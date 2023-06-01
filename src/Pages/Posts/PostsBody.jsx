@@ -1,22 +1,22 @@
-import { AiOutlineSearch, AiOutlineShareAlt } from "react-icons/ai";
-import { Link } from "react-router-dom";  
+import { AiOutlineShareAlt } from "react-icons/ai";
+import { Link } from "react-router-dom";
 import Poststags from "./Poststags";
-import FoodCard from "../../Components/FoodCard/FoodCard";
 import PostsComment from "./PostsComment";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper";
 import "./Posts.css";
-import Image1 from "./Assets/Image1.png";
+// import Image5 from "./Assets/Image5.png";
 import Image2 from "./Assets/Image2.png";
 import Image3 from "./Assets/Image3.png";
 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
+import PostsCard from "../../Components/PostsCard/PostsCard";
 
 export default function PostsBody(props) {
   return (
-    <div className="mt-[15vh]">
+    <div className="mt-[12vh] lg:mt-[15vh]">
       <section className=" px-[10%] my-[3vh] lg:px-[15%] lg:my-[5vh]  ">
         <div className="flex justify-between ">
           <Link
@@ -86,12 +86,12 @@ export default function PostsBody(props) {
           >
             <SwiperSlide>
               <div>
-                <img className="w-full" src={props.Image1}alt="Snacks" />
+                <img className="w-full" src={props.Image1} alt="Snacks" />
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div>
-                <img className="w-full" src={props.Image2}alt="Snacks" />
+                <img className="w-full" src={props.Image2} alt="Snacks" />
               </div>
             </SwiperSlide>
             <SwiperSlide>
@@ -119,15 +119,25 @@ export default function PostsBody(props) {
               Recent Posts
             </h2>
             <Link
-              to=""
-              className="bg-[#F3F6F1] font-IBM text-[#370E00] font-normal text-[1rem] leading-[120%] py-[1vh] px-[2%]  rounded-[8px] border-[0.5px] border-solid border-[#370E00] md:text-[1.1rem] xl:text-[1.3rem]"
+              to="/recipes"
+              className="hover:bg-[#B5C7A5] hover:border-[#B5C7A5] bg-[#F3F6F1] font-IBM text-[#370E00] font-normal text-[1rem] leading-[120%] py-[1vh] px-[2%]  rounded-[8px] border-[0.5px] border-solid border-[#370E00] md:text-[1.1rem] xl:text-[1.3rem]"
             >
               See All
             </Link>
           </div>
-          <div className="flex gap-[5%]">
-            <FoodCard />
-            <FoodCard />
+          <div className="flex justify-between">
+            <PostsCard
+              img={Image2}
+              hoverTitle="Strawberry Shortcake"
+              hoverText="There are many variations of strawberry cake, but most recipes call for a basic sponge cake that is flavored with vanilla extract and almond extract. Fresh strawberries are added to the batter or used to create a filling or topping. Some recipes call for a layer of strawberry jam or a cream cheese frosting that is flavored with strawberry puree. The fruit to the cake batter gives it a burst of juicy sweetness."
+              title="Strawberry Shortcake"
+            />
+            <PostsCard
+              img={Image3}
+              hoverTitle="Peach and Cream"
+              hoverText="Peach and cream are two delightful ingredients that come together to create a delicious and refreshing dessert or snack. Peaches are a sweet and juicy fruit that is in season during the summer months, while cream is a dairy product that is often used to add richness and depth of flavor to desserts. One of the most popular ways to enjoy peaches and cream is to create a simple dessert by slicing fresh peaches and serving."
+              title="Peach and Cream"
+            />
           </div>
         </div>
 

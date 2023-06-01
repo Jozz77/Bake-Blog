@@ -4,7 +4,6 @@
   background-size: cover;
   transition: all 0.3s ease-in-out;
   transform: translateY(0);
-  height: 60vh;
   overflow: hidden;
 }
 .img:hover .img-hover {
@@ -38,34 +37,4 @@
 .Life-Gives {
   animation: movingTopToBottom 1s linear;
   -webkit-animation: movingTopToBottom linear 1s;
-}
-@media screen and (max-width:1300px) {
-  .Life-Hero {
-    height: 70vh;
-
-  }
-}
-@media screen and (max-width:1150px) {
-  .Life-Hero {
-    height: 60vh;
-
-  }
-}
-@media screen and (max-width:1050px) {
-  .Life-Hero {
-    height: 50vh;
-
-  }
-}
-@media screen and (max-width:850px) {
-  .Life-Hero {
-    height: 50vh;
-
-  }
-}
-@media screen and (max-width:750px) {
-  .Life-Hero {
-    height: 45vh;
-
-  }
 }
