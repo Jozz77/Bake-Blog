@@ -19,7 +19,7 @@ export default function AboutBody() {
         </div>
 
         <div className="bg-[#F3F6F1] w-[55%] ml-[-2%] py-[1vh] pl-[2%] pr-[5%] md:ml-[-3%] md:py-[2vh] md:pl-[3%] lg:ml-[-5%] lg:pr-[5%] lg:pl-[5%] lg:w-[50%] xl:py-[5vh] ">
-          <h2 className="text-[#A62B00] font-IBM font-medium text-[1.3rem] leading-[120%] mb-[0.5vh] md:mb-[1vh] md:text-[1.7rem] lg:font-normal lg:text-[2.3rem] xl:mb-[2vh] xl:text-[2.9rem]">
+          <h2 className="text-[rgb(166,43,0)] font-IBM font-medium text-[1.3rem] leading-[120%] mb-[0.5vh] md:mb-[1vh] md:text-[1.7rem] lg:font-normal lg:text-[2.3rem] xl:mb-[2vh] xl:text-[2.9rem]">
             Hello, I’m Roberta
           </h2>
           <p className="text-[#370E00] font-IBM font-normal text-[0.7rem] leading-[150%] md:text-[0.8rem] lg:text-[1rem] xl:text-[1.2rem] ">
