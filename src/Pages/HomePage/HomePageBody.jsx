@@ -9,8 +9,22 @@ import CardHero from "./Assets/CardHero.png";
 import CardHero2 from "./Assets/CardHero2.png";
 import CardHero3 from "./Assets/CardHero3.png";
 import CardHero4 from "./Assets/CardHero4.png";
+import TextTransition, { presets } from 'react-text-transition';
+import { useEffect, useState } from "react";
+
+const TEXTS = ['Popular', 'Common', 'Awesome', 'Delicious'];
 
 export default function HomePageBody() {
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const intervalId = setInterval(
+      () => setIndex((index) => index + 1),
+      2000, // every 2 seconds
+    );
+    return () => clearTimeout(intervalId);
+  }, []);
+
   return (
     <div className="">
       <section className="px-[5%] flex justify-between items-center mt-[11vh] md:mt-[13vh] lg:mt-[15vh] ">
@@ -35,10 +49,11 @@ export default function HomePageBody() {
             text='Bagels are a type of bread product that is boiled before it...'
            />
       </section>
+
       <section className="px-[5%] mt-[1vh] lg:mt-[2vh] xl:mt-[4vh]">
-        <div className="flex justify-center py-[1.5vh] gap-[2%] md:py-[2vh] ">
-          <p className="text-[#370E00] font-normal text-[1.7rem] leading-[150%] md:text-[2rem] lg:text-[2.6rem] xl:text-[3rem]">
-            Popular
+        <div className="flex justify-center py-[1.5vh] gap-[2%] md:py-[2vh] lg:py-[3vh] ">
+          <p className="text-[#A62B00] overflow-hidden font-normal text-[1.7rem] leading-[150%] md:text-[2rem] lg:text-[2.6rem] xl:text-[3rem]">
+          <TextTransition springConfig={presets.gentle}>{TEXTS[index % TEXTS.length]}</TextTransition>
           </p>
           <p className="text-[#370E00] font-normal text-[1.7rem] leading-[150%] md:text-[2rem] lg:text-[2.6rem] xl:text-[3rem]">
             Recipes

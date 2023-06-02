@@ -1,0 +1,23 @@
+/* animation 2 */
+.sugar-container-about{
+  overflow: hidden;
+}
+.sugarImgAbout{
+  transform: translateX(0%);
+    transition: transform 0.5s ease;
+}
+.sugar-container-about:hover .sugarAbout{
+  transform: translateX(-100%);
+  padding-left: -20%;
+  /* padding-right: 0; */
+}
+
+.sugarAbout{
+  transform: translate(0%);
+    transition: transform 0.5s ease;
+}
+.sugar-container-about:hover .sugarImgAbout{
+  transform: translateX(100%);
+  padding-left: -10%;
+  /* width: 60%; */
+}

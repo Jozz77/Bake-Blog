@@ -1,6 +1,7 @@
 import SomethingOven from "../../Components/SomethingOven/SomethingOven";
 import TypewriterSection from "../../Components/TypewriterSection/TypewriterSection";
 import SugarGirl from "./Assets/SugarGirl.png";
+import './About.css'
 
 
 export default function AboutBody() {
@@ -13,16 +14,16 @@ export default function AboutBody() {
          />
       </section>
 
-      <section className="relative flex items-center py-[2vh] xl:py-[4vh]">
-        <div className="w-[50%]">
+      <section className="relative sugar-container-about flex items-center py-[2vh] xl:py-[4vh]">
+        <div className="sugarImgAbout w-[50%]">
           <img src={SugarGirl} className=" w-full" alt="SugarGirl" />
         </div>
 
-        <div className="bg-[#F3F6F1] w-[55%] ml-[-2%] py-[1vh] pl-[2%] pr-[5%] md:ml-[-3%] md:py-[2vh] md:pl-[3%] lg:ml-[-5%] lg:pr-[5%] lg:pl-[5%] lg:w-[50%] xl:py-[5vh] ">
+        <div className="sugarAbout bg-[#F3F6F1] w-[55%] ml-[-2%] py-[1vh] pl-[2%] pr-[5%] md:ml-[-3%] md:py-[2vh] md:pl-[3%] lg:ml-[-5%] lg:pr-[5%] lg:pl-[5%] lg:w-[50%] xl:py-[5vh] ">
           <h2 className="text-[rgb(166,43,0)] font-IBM font-medium text-[1.3rem] leading-[120%] mb-[0.5vh] md:mb-[1vh] md:text-[1.7rem] lg:font-normal lg:text-[2.3rem] xl:mb-[2vh] xl:text-[2.9rem]">
             Hello, I’m Roberta
           </h2>
-          <p className="text-[#370E00] font-IBM font-normal text-[0.7rem] leading-[150%] md:text-[0.8rem] lg:text-[1rem] xl:text-[1.2rem] ">
+          <p className=" text-[#370E00] font-IBM font-normal text-[0.7rem] leading-[150%] md:text-[0.8rem] lg:text-[1rem] xl:text-[1.2rem] ">
             I’m a passionate baker who has been creating delicious baked goods
             for over 10 years. I grew up in a family of bakers, and learned
             everything I know about baking from my grandmother, who ran a small
@@ -30,7 +31,7 @@ export default function AboutBody() {
             started my own bakery, which quickly became a local favorite. My
             bakery specializes in artisanal bread.
           </p>
-          <p className="text-[#370E00] font-IBM font-normal text-[0.7rem] leading-[150%] md:text-[0.8rem] lg:text-[1rem] xl:text-[1.2rem]  mt-[0.5vh] md:mt-[1vh]">
+          <p className=" text-[#370E00] font-IBM font-normal text-[0.7rem] leading-[150%] md:text-[0.8rem] lg:text-[1rem] xl:text-[1.2rem]  mt-[0.5vh] md:mt-[1vh]">
             I also enjoys sharing my knowledge and passion for baking with
             others. I regularly hosts baking classes for both kids and adults,
             teaching them how to make everything from bread to macarons. For me,
