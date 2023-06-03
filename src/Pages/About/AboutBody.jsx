@@ -1,17 +1,13 @@
 import SomethingOven from "../../Components/SomethingOven/SomethingOven";
 import TypewriterSection from "../../Components/TypewriterSection/TypewriterSection";
 import SugarGirl from "./Assets/SugarGirl.png";
-import './About.css'
-
+import "./About.css";
 
 export default function AboutBody() {
   return (
     <div className="mt-[15vh]">
       <section>
-        <TypewriterSection
-            FirstText='A'
-            SecondText="bout Me"
-         />
+        <TypewriterSection FirstText="A" SecondText="bout Me" />
       </section>
 
       <section className="relative sugar-container-about flex items-center py-[2vh] xl:py-[4vh]">
@@ -36,8 +32,8 @@ export default function AboutBody() {
             others. I regularly hosts baking classes for both kids and adults,
             teaching them how to make everything from bread to macarons. For me,
             baking is more than just a job – it's a way of life. I belief that
-            food has the power to bring people tog  ether and create memories that
-            will last a lifetime.
+            food has the power to bring people tog ether and create memories
+            that will last a lifetime.
           </p>
         </div>
       </section>
@@ -46,43 +42,46 @@ export default function AboutBody() {
         <h2 className="text-[#A62B00] font-normal text-[1.9rem] leading-[120%] mb-[2vh] md:text-[2rem]  lg:text-[2.3rem] xl:text-[2.6rem] ">
           Things I Do{" "}
         </h2>
-        <div>
-          <div className="flex justify-between text-[#A62B00]">
-            <div className="w-[31.5%]">
-              <h4 className="text-[#A62B00] font-IBM font-normal text-[1rem] leading-[120%] mb-[1vh] md:text-[1.2rem] lg:text-[1.4rem] xl:text-[1.6rem]">
-                Culinary Content
-              </h4>
-              <p className="text-[#A62B00] font-IBM font-normal text-[0.8rem] leading-[150%] md:text-[0.9rem] lg:text-[1rem] xl:text-[1.2rem] ">
-                Lorem ipsum dolor sit amet consectetur. Et in aliquam
-                consectetur ornare faucibus. Proin nisi ac pharetra quis odio
-                orci massa. Diam sodales nibh pellentesque. Proin nisi ac
-                pharetra quis odio orci massa. Diam sodales nibh pellentesque.
-              </p>
-            </div>
-            <div className="w-[31.5%]">
-              <h4 className="text-[#A62B00] font-IBM font-normal text-[1rem] leading-[120%] mb-[1vh] md:text-[1.2rem] lg:text-[1.4rem] xl:text-[1.6rem]">
-                Online Classes
-              </h4>
-              <p className="text-[#A62B00] font-IBM font-normal text-[0.8rem] leading-[150%] md:text-[0.9rem] lg:text-[1rem] xl:text-[1.2rem] ">
-                Lorem ipsum dolor sit amet consectetur. Et in aliquam
-                consectetur ornare faucibus. Proin nisi ac pharetra quis odio
-                orci massa. Diam sodales nibh pellentesque. Proin nisi ac
-                pharetra quis odio orci massa. Diam sodales nibh pellentesque.
-              </p>
-            </div>
-            <div className="w-[31.5%]">
-              <h4 className="text-[#A62B00] font-IBM font-normal text-[1rem] leading-[120%] mb-[1vh] md:text-[1.2rem] lg:text-[1.4rem] xl:text-[1.6rem]">
-                Social Media Advertsing
-              </h4>
-              <p className="text-[#A62B00] font-IBM font-normal text-[0.8rem] leading-[150%] md:text-[0.9rem] lg:text-[1rem] xl:text-[1.2rem] ">
-                Lorem ipsum dolor sit amet consectetur. Et in aliquam
-                consectetur ornare faucibus. Proin nisi ac pharetra quis odio
-                orci massa. Diam sodales nibh pellentesque. Proin nisi ac
-                pharetra quis odio orci massa. Diam sodales nibh pellentesque.
-              </p>
+
+        <div className="content-container">
+          <div className="content">
+            <div className="flex justify-between text-[#A62B00]">
+              <div className="w-[31.5%]">
+                <h4 className="text-[#A62B00] font-IBM font-normal text-[1rem] leading-[120%] mb-[1vh] md:text-[1.2rem] lg:text-[1.4rem] xl:text-[1.6rem]">
+                  Culinary Content
+                </h4>
+                <p className="text-[#A62B00] font-IBM font-normal text-[0.8rem] leading-[150%] md:text-[0.9rem] lg:text-[1rem] xl:text-[1.2rem] ">
+                  Lorem ipsum dolor sit amet consectetur. Et in aliquam
+                  consectetur ornare faucibus. Proin nisi ac pharetra quis odio
+                  orci massa. Diam sodales nibh pellentesque. Proin nisi ac
+                  pharetra quis odio orci massa. Diam sodales nibh pellentesque.
+                </p>
+              </div>
+              <div className="w-[31.5%]">
+                <h4 className="text-[#A62B00] font-IBM font-normal text-[1rem] leading-[120%] mb-[1vh] md:text-[1.2rem] lg:text-[1.4rem] xl:text-[1.6rem]">
+                  Online Classes
+                </h4>
+                <p className="text-[#A62B00] font-IBM font-normal text-[0.8rem] leading-[150%] md:text-[0.9rem] lg:text-[1rem] xl:text-[1.2rem] ">
+                  Lorem ipsum dolor sit amet consectetur. Et in aliquam
+                  consectetur ornare faucibus. Proin nisi ac pharetra quis odio
+                  orci massa. Diam sodales nibh pellentesque. Proin nisi ac
+                  pharetra quis odio orci massa. Diam sodales nibh pellentesque.
+                </p>
+              </div>
+              <div className="w-[31.5%]">
+                <h4 className="text-[#A62B00] font-IBM font-normal text-[1rem] leading-[120%] mb-[1vh] md:text-[1.2rem] lg:text-[1.4rem] xl:text-[1.6rem]">
+                  Social Media Advertsing
+                </h4>
+                <p className="text-[#A62B00] font-IBM font-normal text-[0.8rem] leading-[150%] md:text-[0.9rem] lg:text-[1rem] xl:text-[1.2rem] ">
+                  Lorem ipsum dolor sit amet consectetur. Et in aliquam
+                  consectetur ornare faucibus. Proin nisi ac pharetra quis odio
+                  orci massa. Diam sodales nibh pellentesque. Proin nisi ac
+                  pharetra quis odio orci massa. Diam sodales nibh pellentesque.
+                </p>
+              </div>
             </div>
           </div>
-          <hr className=" border-solid border-[0.5px] my-[2vh] lg:my-[3vh]"  />
+          <hr className=" border-solid border-[0.5px] my-[2vh] lg:my-[3vh]" />
           <div className="text-right">
             <button className=" border-solid border-[0.5px] border-[#000000] rounded-[8px] px-[2%] py-[0.7vh] text-[#370E00] font-IBM font-bold text-[0.8rem] leading-[150%] md:text-[0.9rem]  lg:py-[1vh] lg:text-[1rem]  xl:text-[1.1rem]">
               Let’s Work Together

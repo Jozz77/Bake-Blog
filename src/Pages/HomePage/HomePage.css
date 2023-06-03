@@ -48,8 +48,10 @@
 }
 .sugar-container:hover .sugar{
   transform: translateX(100%);
+  margin-right: 5%;
   padding-left: 5%;
   padding-right: 0;
+  width: 45%;
 }
 
 .sugarImg{
@@ -58,6 +60,7 @@
 }
 .sugar-container:hover .sugarImg{
   transform: translateX(-100%);
-  margin-left: 10%;
-  width: 60%;
+  margin-left: 0%;  
+  padding-right: 0;
+  /* width: 60%; */
 }
