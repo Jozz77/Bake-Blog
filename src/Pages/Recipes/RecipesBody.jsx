@@ -56,6 +56,7 @@ export default function RecipesBody() {
             Popular
           </button>
           <button
+          id="recent"
             className={
               toogle === 3
                 ? "text-[#A62B00]  "
@@ -92,6 +93,7 @@ export default function RecipesBody() {
       <section className="px-[5%] ">
         {/* All posts section */}
         <div
+        
           className={
             toogle === 1 ? "flex flex-wrap gap-x-[2%] gap-y-[2vh] lg:gap-x-[3%] lg:gap-y-[5vh] " : "hidden"
           }
@@ -99,11 +101,13 @@ export default function RecipesBody() {
            <FoodPostsCard
             img={First1}
             hoverImg={First5}
+            link='/posts1'
             title="Easiest & Tasty Cake"
             text=" Bake is a beloved dessert that is enjoyed by people all over the world. cake is a staple of..."
           />
            <FoodPostsCard
             img={First2}
+            link='/posts2'
             hoverImg={First6}
             title="Artisan Bread"
             text=" Artisan bread is a type of bread that is made using traditional techniques..."
@@ -116,6 +120,7 @@ export default function RecipesBody() {
           /> */}
            <FoodPostsCard
             img={First4}
+            link='/posts3'
             hoverImg={First7}
             title="Crisp Churros"
             text="Crisp churros are a delicious fried pastry that originated in Spain but have become a popular... "
@@ -123,18 +128,21 @@ export default function RecipesBody() {
            <FoodPostsCard
             img={First5}
             hoverImg={First2}
+            link='/posts1'
             title="Chocolate Cookie"
             text="Chocolate cookies are a delicious and indulgent treat that are loveds..."
           />
            <FoodPostsCard
             img={First6}
             hoverImg={First1}
+            link='/posts2'
             title="PiePeach & Cream"
             text="Peach and cream pie is a classic dessert that is perfect for summertime...."
           />
            <FoodPostsCard
             img={First7}
             hoverImg={First4}
+            link='/posts3'
             title="Pizza crust"
             text=" Pizza crust can be made using a sourdough starter or a pizza that is perfect..."
           />
@@ -142,6 +150,7 @@ export default function RecipesBody() {
 
         {/* Popular section */}
         <div
+        id="popular"
           className={
             toogle === 2 ? "flex flex-wrap gap-x-[2%] gap-y-[2vh] lg:gap-x-[3%] lg:gap-y-[5vh] " : "hidden"
           }
@@ -149,18 +158,21 @@ export default function RecipesBody() {
           <FoodPostsCard
             img={First1}
             hoverImg={First5}
+            link='/posts2'
             title="Easiest & Tasty Cake"
             text=" Bake is a beloved dessert that is enjoyed by people all over the world. cake is a..."
           />
            <FoodPostsCard
             img={First6}
             hoverImg={First2}
+            link='/posts1'
             title="PiePeach & Cream"
             text="Peach and cream pie is a classic dessert that is perfect for summertime...."
           />
         <FoodPostsCard
             img={First7}
             hoverImg={First4}
+            link='/posts3'
             title="Pizza crust"
             text=" Pizza crust can be made using a sourdough starter or a pizza that is perfect..."
           />
@@ -168,6 +180,7 @@ export default function RecipesBody() {
 
         {/* Recent section */}
         <div
+        id="recent"
           className={
             toogle === 3 ? "flex flex-wrap gap-x-[2%] gap-y-[2vh] lg:gap-x-[3%] lg:gap-y-[5vh] " : "hidden"
           }
@@ -175,12 +188,14 @@ export default function RecipesBody() {
            <FoodPostsCard
             img={First6}
             hoverImg={First1}
+            link='/posts3'
             title="PiePeach & Cream"
             text="Peach and cream pie is a classic dessert that is perfect for summertime...."
           />
            <FoodPostsCard
             img={First4}
             hoverImg={First7}
+            link='/posts2'
             title="Crisp Churros"
             text="Crisp churros are a delicious fried pastry that originated in Spain but have become a popular... "
           />
@@ -188,6 +203,7 @@ export default function RecipesBody() {
 
         {/* Sweet section */}
         <div
+        id="sweet"
           className={
             toogle === 4 ? "flex flex-wrap gap-x-[2%] gap-y-[2vh] lg:gap-x-[3%] lg:gap-y-[5vh] " : "hidden"
           }
@@ -195,24 +211,28 @@ export default function RecipesBody() {
            <FoodPostsCard
             img={First7}
             hoverImg={First4}
+            link='/posts1'
             title="Pizza crust"
             text=" Pizza crust can be made using a sourdough starter or a pizza that is perfect..."
           />
            <FoodPostsCard
             img={First1}
             hoverImg={First5}
+            link='/posts2'
             title="Easiest & Tasty Cake"
             text=" Bake is a beloved dessert that is enjoyed by people all over the world. cake is a staple..."
           />
            <FoodPostsCard
             img={First2}
             hoverImg={First6}
+            link='/posts3'
             title="Artisan Bread"
             text=" Artisan bread is a type of bread that is made using traditional techniques..."
           />
         <FoodPostsCard
             img={First6}
             hoverImg={First1}
+            link='/posts2'
             title="PiePeach & Cream"
             text="Peach and cream pie is a classic dessert that is perfect for summertime...."
           />
@@ -220,6 +240,7 @@ export default function RecipesBody() {
 
         {/* Savory section */}
         <div
+        id="savory"
           className={
             toogle === 5 ? "flex flex-wrap gap-x-[2%] gap-y-[2vh] lg:gap-x-[3%] lg:gap-y-[5vh] " : "hidden"
           }
@@ -227,6 +248,7 @@ export default function RecipesBody() {
              <FoodPostsCard
             img={First7}
             hoverImg={First4}
+            link='/posts3'
             title="Pizza crust"
             text=" Pizza crust can be made using a sourdough starter or a pizza that is perfect..."
           />

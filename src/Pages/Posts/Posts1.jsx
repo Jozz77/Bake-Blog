@@ -7,7 +7,7 @@ import Image2 from "./Assets/Image2.png";
 import Image3 from "./Assets/Image3.png";
 
 
-export default function Posts() {
+export default function Posts1() {
   return (
     <div>
         <Header />

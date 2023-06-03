@@ -5,7 +5,7 @@
 }
 /* top */
 .des-content-topp{
-    transform: translateY(-100%);
+    transform: translateY(-200%);
     transition: transform 0.5s ease;
 }
 .follow:hover .des-content-topp{
@@ -14,7 +14,7 @@
 }
 /* bottom */
 .des-content-bottom{
-    transform: translateY(100%);
+    transform: translateY(200%);
     transition: transform 0.5s ease;
 }
 .follow:hover .des-content-bottom{
@@ -23,7 +23,7 @@
 }
 /* right */
 .des-content-right{
-    transform: translateX(100%);
+    transform: translateX(200%);
     transition: transform 0.5s ease;
 }
 .follow:hover .des-content-right{
@@ -32,7 +32,7 @@
 }
 /* left */
 .des-content-left{
-    transform: translateX(-100%);
+    transform: translateX(-200%);
     transition: transform 0.5s ease;
 }
 .follow:hover .des-content-left{

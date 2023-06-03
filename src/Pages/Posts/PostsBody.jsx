@@ -1,4 +1,5 @@
 import { AiOutlineShareAlt } from "react-icons/ai";
+import { HashLink } from 'react-router-hash-link';
 import { Link } from "react-router-dom";
 import Poststags from "./Poststags";
 import PostsComment from "./PostsComment";
@@ -25,30 +26,30 @@ export default function PostsBody(props) {
           >
             All Posts
           </Link>
-          <Link
+          <HashLink
             to="/recipes"
             className="text-[#370E00] font-normal text-[1.3rem] md:text-[1.5rem] lg:text-[1.7rem] leading-[120%] "
           >
             Popular
-          </Link>
-          <Link
-            to="/recipes"
+          </HashLink>
+          <HashLink
+            to="/recipes#recent"
             className="text-[#370E00] font-normal text-[1.3rem] md:text-[1.5rem] lg:text-[1.7rem] leading-[120%] "
           >
             Recent
-          </Link>
-          <Link
+          </HashLink>
+          <HashLink
             to="/recipes"
             className="text-[#370E00] font-normal text-[1.3rem] md:text-[1.5rem] lg:text-[1.7rem] leading-[120%] "
           >
             Sweet
-          </Link>
-          <Link
+          </HashLink>
+          <HashLink
             to="/recipes"
             className="text-[#370E00] font-normal text-[1.3rem] md:text-[1.5rem] lg:text-[1.7rem] leading-[120%] "
           >
             Savory
-          </Link>
+          </HashLink>
         </div>
       </section>
 
@@ -129,12 +130,14 @@ export default function PostsBody(props) {
             <PostsCard
               img={Image2}
               hoverTitle="Strawberry Shortcake"
+              link='/posts3'
               hoverText="There are many variations of strawberry cake, but most recipes call for a basic sponge cake that is flavored with vanilla extract and almond extract. Fresh strawberries are added to the batter or used to create a filling or topping. Some recipes call for a layer of strawberry jam or a cream cheese frosting that is flavored with strawberry puree. The fruit to the cake batter gives it a burst of juicy sweetness."
               title="Strawberry Shortcake"
             />
             <PostsCard
               img={Image3}
               hoverTitle="Peach and Cream"
+              link='/posts1'
               hoverText="Peach and cream are two delightful ingredients that come together to create a delicious and refreshing dessert or snack. Peaches are a sweet and juicy fruit that is in season during the summer months, while cream is a dairy product that is often used to add richness and depth of flavor to desserts. One of the most popular ways to enjoy peaches and cream is to create a simple dessert by slicing fresh peaches and serving."
               title="Peach and Cream"
             />

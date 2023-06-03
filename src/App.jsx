@@ -4,7 +4,9 @@ import HomePage from "./Pages/HomePage/HomePage"
 import About from './Pages/About/About'
 import Contact from './Pages/Contact/Contact'
 import Recipes from './Pages/Recipes/Recipes'
-import Posts from './Pages/Posts/Posts1'
+import Posts1 from './Pages/Posts/Posts1'
+import Posts2 from './Pages/Posts/Posts2'
+import Posts3 from './Pages/Posts/Posts3'
 
 function App() {
 
@@ -17,7 +19,9 @@ function App() {
           <Route path='/about' element={<About/> }> </Route>
           <Route path='/contact' element={<Contact/> }> </Route>
           <Route path='/recipes' element={<Recipes/> }> </Route>
-          <Route path='/posts1' element={<Posts/> }> </Route>
+          <Route path='/posts1' element={<Posts1/> }> </Route>
+          <Route path='/posts2' element={<Posts2/> }> </Route>
+          <Route path='/posts3' element={<Posts3/> }> </Route>
         </Routes>
       </BrowserRouter>
        

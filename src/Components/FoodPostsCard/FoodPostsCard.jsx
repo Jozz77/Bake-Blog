@@ -20,7 +20,7 @@ export default function FoodPostsCard(props) {
 
   return (
     <div className="FoodPostsCard bg-[#E8EFE1] w-[32%] px-[1.5%] py-[1vh] lg:w-[31%] lg:py-[2vh] xl:w-[30%]">
-      <Link to="/posts1">
+      <Link to={props.link}>
         <div className="follow">
           <div>
             <img className="w-full" src={props.img} alt="" />

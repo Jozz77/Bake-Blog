@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Logo from './Assets/Logo.png'
 import Profile from './Assets/Profile.png'
 import { AiOutlineSearch } from 'react-icons/ai';
+// import { NavHashLink } from 'react-router-hash-link';
 import './Header.css'
 
 

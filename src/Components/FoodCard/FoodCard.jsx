@@ -16,7 +16,7 @@ export default function FoodCard(props) {
 
   return (
     <div className="FoodCard bg-[#E8EFE1] w-[32%] px-[1.5%] py-[1vh] lg:w-[30%] lg:py-[2vh]">
-      <Link to="/posts1">
+      <Link to={props.link}>
         <div>
           <img className="w-full" src={props.img} alt="" />
         </div>

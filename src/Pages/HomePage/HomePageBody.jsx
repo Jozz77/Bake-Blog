@@ -47,6 +47,7 @@ export default function HomePageBody() {
             img={CardHero}
             title='Bagels'
             text='Bagels are a type of bread product that is boiled before it...'
+            link='/posts1'
            />
       </section>
 
@@ -64,16 +65,19 @@ export default function HomePageBody() {
             img={CardHero2}
             title='The Perfect Key-Lime Pie'
             text='Key lime pie is a classic dessert that originated in the Florida...'
+            link='/posts2'
            />
            <FoodCard 
             img={CardHero3}
             title='Sourdough Bread'
             text='Sourdough bread is a type of bread made from a sourdough...'
+            link='/posts3'
            />
             <FoodCard 
             img={CardHero4}
             title='Pizza crust'
             text=' Pizza crust can be made using a sourdough starter or a pizza...'
+            link='/posts1'
            />
         </div>
       </section>

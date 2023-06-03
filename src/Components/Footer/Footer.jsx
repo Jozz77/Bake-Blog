@@ -3,8 +3,13 @@ import Logo from "./Assets/Logo.png";
 import { ImFacebook } from "react-icons/im";
 import { CiTwitter } from "react-icons/ci";
 import { AiOutlineInstagram } from "react-icons/ai";
+import { useEffect } from "react";
 
 export default function Footer() {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+  
   return (
     <footer className="px-[5%] py-[3vh] lg:py-[5vh] ">
       <section className="flex gap-[3%] md:gap-[5%] lg:gap-[7%]">

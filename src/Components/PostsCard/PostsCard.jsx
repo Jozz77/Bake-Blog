@@ -21,7 +21,7 @@ export default function PostsCard(props) {
 
   return (
     <div className="PostsCard bg-[#E8EFE1] w-[48%] px-[1.5%] py-[1vh] lg:w-[48%] lg:py-[2vh] xl:w-[48%]">
-      <Link to="/posts1">
+      <Link to={props.link}>
         <div className="follow">
           <div>
             <img className="w-full" src={props.img} alt="" />
