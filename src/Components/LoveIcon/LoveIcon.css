@@ -1,0 +1,24 @@
+.lovenofill{
+    animation: love 0.5s ease-in forwards;
+}
+.lovefill{
+    animation: love 0.5s ease-in forwards;
+}
+@keyframes love {
+    50%{
+        transform: scale(150%);
+    }
+    100%{
+        transform: scale(100%);
+        opacity: 1;
+    }
+}
+/* @keyframes nolove {
+    50%{
+        transform: scale(200%);
+    }
+    100%{
+        transform: scale(100%);
+        opacity: 1;
+    }
+} */

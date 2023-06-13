@@ -1,21 +1,10 @@
 import { ImFacebook } from "react-icons/im";
 import { CiTwitter } from "react-icons/ci";
 import { AiOutlineInstagram } from "react-icons/ai";
-import { AiOutlineHeart, AiFillHeart } from "react-icons/ai";
-import { useState } from "react";
+import LoveIcon from "../../Components/LoveIcon/LoveIcon";
 
 export default function Poststags() {
-  const [toggle, setToggle] = useState(true);
 
-  function handleClick() {
-    setToggle((toggle) => !toggle);
-  }
-  let checkState = toggle
-    ? "text-[#370E00] text-[0.8rem] md:text-[1rem] lg:text-[1.2rem] xl:text-[1.5rem]"
-    : "hidden";
-  let checkStates = toggle
-    ? "hidden"
-    : "text-[#370E00] text-[0.8rem] md:text-[1rem] lg:text-[1.2rem] xl:text-[1.5rem]";
   return (
     <div>
       <small className="text-[#370E00] font-normal text-[0.9rem] text-justify leading-[150%] md:ext-[1rem]">
@@ -37,18 +26,7 @@ export default function Poststags() {
           <p>0 comments</p>
         </div>
         <div className="cursor-pointer ">
-          <AiOutlineHeart
-            onClick={() => {
-              handleClick();
-            }}
-            className={`${checkState}`}
-          />
-          <AiFillHeart
-            onClick={() => {
-              handleClick();
-            }}
-            className={`${checkStates}`}
-          />
+          <LoveIcon />
         </div>
       </div>
     </div>

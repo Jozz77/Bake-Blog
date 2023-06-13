@@ -2,6 +2,7 @@
     /* animation: moveDownHoverImg 0.5s ease forwards; */
   transform: translateY(110%);
   transition: transform 0.5s ease;
+  opacity: 0.5;
 }
 .Img-container:hover .hoverImg {
     /* animation: moveHoverImg 0.5s ease forwards; */

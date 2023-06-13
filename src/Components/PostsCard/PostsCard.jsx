@@ -1,23 +1,10 @@
 import { AiOutlineEye } from "react-icons/ai";
 import { BiComment } from "react-icons/bi";
-import { AiOutlineHeart } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import "./PostsCard.css";
-import { useState } from "react";
-import { AiFillHeart } from "react-icons/ai";
+import LoveIcon from "../LoveIcon/LoveIcon";
 
 export default function PostsCard(props) {
-  const [toggle, setToggle] = useState(true);
-
-  function handleClick() {
-    setToggle((toggle) => !toggle);
-  }
-  let checkState = toggle
-    ? "text-[#370E00] text-[0.8rem] md:text-[1rem] lg:text-[1.2rem] xl:text-[1.5rem]"
-    : "hidden";
-  let checkStates = toggle
-    ? "hidden"
-    : "text-[#370E00] text-[0.8rem] md:text-[1rem] lg:text-[1.2rem] xl:text-[1.5rem]";
 
   return (
     <div className="PostsCard bg-[#E8EFE1] w-[48%] px-[1.5%] py-[1vh] lg:w-[48%] lg:py-[2vh] xl:w-[48%]">
@@ -58,18 +45,7 @@ export default function PostsCard(props) {
         </div>
 
         <div className="cursor-pointer ">
-          <AiOutlineHeart
-            onClick={() => {
-              handleClick();
-            }}
-            className={`${checkState}`}
-          />
-          <AiFillHeart
-            onClick={() => {
-              handleClick();
-            }}
-            className={`${checkStates}`}
-          />
+          <LoveIcon />
         </div>
       </section>
     </div>

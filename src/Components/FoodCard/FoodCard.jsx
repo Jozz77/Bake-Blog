@@ -1,18 +1,9 @@
 import { AiOutlineEye } from "react-icons/ai";
-import { AiOutlineHeart } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import "./FoodCard.css";
-import { useState } from "react";
-import { AiFillHeart } from "react-icons/ai";
+import LoveIcon from "../LoveIcon/LoveIcon";
 
 export default function FoodCard(props) {
-  const [toggle, setToggle] = useState(true);
-
-  function handleClick() {
-    setToggle((toggle) => !toggle);
-  }
-  let checkState = toggle ? "text-[#370E00] text-[0.8rem] md:text-[1rem] lg:text-[1.2rem] xl:text-[1.5rem]" : "hidden";
-  let checkStates = toggle ? "hidden" : "text-[#370E00] text-[0.8rem] md:text-[1rem] lg:text-[1.2rem] xl:text-[1.5rem]";
 
   return (
     <div className="FoodCard bg-[#E8EFE1] w-[32%] px-[1.5%] py-[1vh] lg:w-[30%] lg:py-[2vh]">
@@ -37,18 +28,7 @@ export default function FoodCard(props) {
           <p className="font-normal font-IBM text-[#370E00] text-[0.8rem] md:text-[1rem] lg:text-[1.2rem] xl:text-[1.5rem]">0</p>
         </div>
         <div>
-          <AiOutlineHeart
-            onClick={() => {
-              handleClick();
-            }}
-            className={`${checkState}`}
-          />
-          <AiFillHeart
-            onClick={() => {
-              handleClick();
-            }}
-            className={`${checkStates}`}
-          />
+          <LoveIcon />
         </div>
       </section>
     </div>
