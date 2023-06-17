@@ -36,9 +36,9 @@ export default function Footer() {
 
         <div className="mt-[3vh] ">
           <h3 className="text-normal mb-[1vh] text-[#370E00] text-[1.2rem] md:text-[1.4rem] leading-[32px]">Site</h3>
-          <Link to="" className="text-normal hover:text-[#A62B00] mt-[0.5vh] block font-IBM text-[#370E00] text-[0.85rem] md:text-[1rem] leading-[150%]">My Recipes</Link>
-          <Link to="" className="text-normal hover:text-[#A62B00] block mt-[0.5vh] font-IBM text-[#370E00] text-[0.85rem] md:text-[1rem] leading-[150%]">About</Link>
-          <Link to="" className="text-normal v block mt-[0.5vh] font-IBM text-[#370E00] text-[0.85rem] md:text-[1rem] leading-[150%]">Contact</Link>
+          <Link to="/recipes" className="text-normal hover:text-[#A62B00] mt-[0.5vh] block font-IBM text-[#370E00] text-[0.85rem] md:text-[1rem] leading-[150%]">My Recipes</Link>
+          <Link to="/about" className="text-normal hover:text-[#A62B00] block mt-[0.5vh] font-IBM text-[#370E00] text-[0.85rem] md:text-[1rem] leading-[150%]">About</Link>
+          <Link to="/contact" className="text-normal v block mt-[0.5vh] font-IBM text-[#370E00] text-[0.85rem] md:text-[1rem] leading-[150%]">Contact</Link>
         </div>
 
         <div className="mt-[4vh]">

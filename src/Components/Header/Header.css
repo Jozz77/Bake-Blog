@@ -2,3 +2,21 @@ header{
     background: rgba(255, 251, 251, 0.575);
     max-width: 1440px;
 }
+.search{
+    transform: translateX(0%);
+    transition: transform 0.5s ease-in;
+    animation: move 1s ease-in -0.2s forwards;
+}
+.hide{
+    display: none;
+    transform: translateX(200%);
+    /* visibility: hidden; */
+}
+@keyframes move {
+    0%{
+        transform: translateX(200%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}

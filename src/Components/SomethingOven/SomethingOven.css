@@ -1,8 +1,9 @@
 .hoverImg {
     /* animation: moveDownHoverImg 0.5s ease forwards; */
-  transform: translateY(110%);
+  transform: translateY(200%);
   transition: transform 0.5s ease;
   opacity: 0.5;
+  margin: auto;
 }
 .Img-container:hover .hoverImg {
     /* animation: moveHoverImg 0.5s ease forwards; */
@@ -21,13 +22,13 @@
         opacity: 0;
     }
     100%{
-        transform: translateY(110%);
+        transform: translateY(200%);
         opacity: 1;
     }
 }
 @keyframes moveDownHoverImg {
     0%{
-        transform: translateY(110%);
+        transform: translateY(200%);
         opacity: 1;
     }
     100%{

@@ -1,0 +1,11 @@
+.shareHover{
+    transform: translateY(200%);
+    transition: transform 0.5s ease;
+}
+.share:hover .shareHover{
+    transform: translate(0);
+    opacity: 1;
+}
+.share:hover .share1{
+    opacity: 0;
+}

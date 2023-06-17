@@ -1,4 +1,3 @@
-import { AiOutlineShareAlt } from "react-icons/ai";
 import { HashLink } from 'react-router-hash-link';
 import { Link } from "react-router-dom";
 import Poststags from "./Poststags";
@@ -14,6 +13,7 @@ import Image3 from "./Assets/Image3.png";
 import "swiper/css";
 import "swiper/css/pagination";
 import PostsCard from "../../Components/PostsCard/PostsCard";
+import ShareIcon from "../../Components/LoveIcon/ShareIcon";
 
 export default function PostsBody(props) {
   return (
@@ -57,8 +57,8 @@ export default function PostsBody(props) {
         <h1 className="text-[#A62B00] font-normal text-[2.3rem] leading-[120%] md:text-[2.8rem]  lg: text-[3.2rem]xl:text-[3.5rem]  ">
           {props.title}
         </h1>
-        <div>
-          <AiOutlineShareAlt className="w-full" />
+        <div className='w-[10%]'>
+          <ShareIcon />
         </div>
       </section>
 

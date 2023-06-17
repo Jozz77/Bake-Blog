@@ -1,7 +1,8 @@
-import { AiOutlineEye, AiOutlineShareAlt } from "react-icons/ai";
+import { AiOutlineEye } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import "./FoodPostsCard.css";
 import LoveIcon from "../LoveIcon/LoveIcon";
+import ShareIcon from "../LoveIcon/ShareIcon";
 
 export default function FoodPostsCard(props) {
 
@@ -20,8 +21,8 @@ export default function FoodPostsCard(props) {
           <h2 className="hover:text-[#370E00] font-normal text-[#A62B00] text-[0.9rem] leading-[120%]  md:text-[1rem] lg:text-[1.3rem]  xl:text-[1.6rem] ">
             {props.title}
           </h2>
-          <div>
-            <AiOutlineShareAlt className="text-[#370E00] text-[0.8rem] md:text-[1rem] lg:text-[1.2rem] xl:text-[1.5rem]" />
+          <div className="">
+           <ShareIcon />
           </div>
         </div>
 

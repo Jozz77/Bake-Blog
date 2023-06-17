@@ -19,7 +19,7 @@ export default function FollowMe() {
             <p className="absolute left-[5%] bottom-[5%] mx-[auto] text-[#FFFFFF] font-meduim text-[1.4rem] leading-[140%]">Cup Cake</p>
           </div>
 
-          <div className="des-content-topp absolute top-0 left-0 bottom-0 right-0 ">
+          <div className="des-content-topp ">
             <FollowDescription
               title="Cup Cake"
               text="This are type of bread product that is made using a sourdough starter, which adds flavor and texture to it. The dough is rolled out and cut into rounds, then cooked on a griddle or in a pan before being baked in the oven."
