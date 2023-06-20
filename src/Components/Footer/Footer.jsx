@@ -14,6 +14,7 @@ export default function Footer() {
     <footer className="px-[5%] py-[3vh] lg:py-[5vh] ">
       <section className="flex flex-wrap gap-[3%] md:gap-[5%] lg:gap-[7%]">
         <div className="w-[100%] sm:w-[40%] md:w-[35%] lg:w-[30%]">
+          <Link to="/">
           <div className="flex items-center gap-[5%]">
             <div>
               <img className="w-full" src={Logo} alt="Logo" />
@@ -22,6 +23,7 @@ export default function Footer() {
               Flour Queen
             </p>
           </div>
+          </Link>
           <p className="text-normal w-[90%] font-IBM text-[#370E00] text-[0.95rem] sm:text-[0.85rem] ssm:w-[70%] sm:w-full md:text-[1rem] leading-[32px] mt-[1vh] sm:mt-[2vh]">
             Welcome to my bake blog! My name is Flour Queen, and I am a
             passionate home baker who loves to experiment with new recipes and

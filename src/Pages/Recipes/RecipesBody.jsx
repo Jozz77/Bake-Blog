@@ -17,7 +17,7 @@ export default function RecipesBody() {
   };
 
   return (
-    <div className="mt-[8vh] md:mt-[11vh] lg:mt-[13vh] xl:mt-[15vh]">
+    <div className="mt-[10vh] md:mt-[11vh] lg:mt-[13vh] xl:mt-[15vh]">
       <section>
         <TypewriterSection FirstText="Al" SecondText="l My Recipes" />
       </section>

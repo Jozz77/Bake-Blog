@@ -1,5 +1,5 @@
 header{
-    background: rgba(255, 251, 251, 0.575);
+    background: #DCE7D2;
     max-width: 1440px;
 }
 .search{
@@ -20,3 +20,20 @@ header{
         transform: translateX(0%);
     }
 }
+.showMenu{
+    display: block;
+    transform: translateX(0%);
+    animation: slideIn 0.5s linear;
+}
+.hideMenu{
+    display: none;
+    transform: translateX(0%);
+    animation: slideIn 0.5s linear;
+}
+@keyframes slideIn {
+    0%{
+      transform: translateX(100%);
+      z-index: 20;
+      opacity: 0;
+    }
+  }
