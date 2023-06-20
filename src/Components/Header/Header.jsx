@@ -3,10 +3,11 @@ import { Link } from "react-router-dom";
 import Logo from "./Assets/Logo.png";
 import Profile from "./Assets/Profile.png";
 import { AiOutlineSearch } from "react-icons/ai";
+import { GrClose } from "react-icons/gr";
+import { GiHamburgerMenu } from "react-icons/gi";
 // import { NavHashLink } from 'react-router-hash-link';
 import "./Header.css";
 import { useState } from "react";
-import { AiOutlineInstagram } from "react-icons/ai";
 
 export default function Header() {
   const [toggle, setToggle] = useState(true);
@@ -29,11 +30,11 @@ export default function Header() {
         setTog(tog => !tog);
     }
 
-    let newState = tog ? "text-[1.3rem] ssm:text-[1.6rem] sm:text-[1.5rem] text-[#370E00]" : "hidden";
-    let newStates = tog ? "hidden" : "text-[1.3rem] ssm:text-[1.6rem] sm:text-[1.5rem] text-[#370E00]";
+    let newState = tog ? "text-[1.5rem] ssm:text-[1.8rem] sm:text-[1.9rem] text-[#370E00]" : "hidden";
+    let newStates = tog ? "hidden" : "text-[1.5rem] ssm:text-[1.8rem] sm:text-[1.9rem] text-[#370E00]";
 
   return (
-    <header>
+    <header className="heading bg-[#DCE7D2]">
       <div className="hidden md:flex fixed top-0 w-full justify-between z-10 px-[5%] py-[1.5vh] md:py-[2vh] ">
         <section className="flex items-center gap-[3%] w-[25%] md:w-[25%] lg:gap-[7%] xl:w-[20%]">
           <Link to="/">
@@ -109,21 +110,21 @@ export default function Header() {
 
       {/* mobile nav */}
       <div className="flex px-[5%] py-[1.5vh] z-10 justify-between items-center w-full fixed top-0 md:hidden">
-      <section className="flex items-center gap-[3%] w-[35%] sm:w-[30%]">
-          <Link to="/" className="w-[25%] ssm:w-[30%]">
+      <section className="flex items-center w-[40%] ssm:w-[40%]sm:w-[30%]">
+          <Link to="/" className="w-[25%] mr-[5%] ssm:w-[30%]">
             <div>
               <img className="w-[100%]" src={Logo} alt="Logo" />
             </div>
           </Link>
           <Link to="/" className="w-[70%] ssm:w-[65%]">
-            <p className="text-normal text-[#370E00] text-[0.75rem] ssm:text-[0.9rem] sm:text-[1rem] ">
+            <p className="text-normal text-[#370E00] text-[0.85rem] ssm:text-[1rem] sm:text-[1rem] ">
               Flour Queen
             </p>
           </Link>
         </section>
 
-        <section className="w-[60%] flex  justify-end gap-[5%] items-center">
-        <div className="overflow-hidden pr-[20%}">
+        <section className="w-[60%] flex  justify-end  items-center">
+        <div className="overflow-hidden mr-[5%] pr-[20%}">
             <AiOutlineSearch
               onClick={() => {
                 handleClick();
@@ -137,7 +138,7 @@ export default function Header() {
                 type="text"
                 placeholder="Search"
               />
-              <AiOutlineSearch
+              <GrClose
                 onClick={() => {
                   handleClick();
                 }}
@@ -145,38 +146,38 @@ export default function Header() {
               />
             </div>
           </div>
-          <div className="mr-[20%}">
+          <div className="mr-[5%]">
             <img className="w-full" src={Profile} alt="Profile" />
           </div>
           <div>
-          <AiOutlineInstagram onClick={() => {setIsNavOpen((prev) => !prev); handleSecondClick()}}  className={`${newState}`}  />
-          <AiOutlineSearch onClick={() => {setIsNavOpen((prev) => !prev); handleSecondClick()}}  className={`${newStates}`} />
+          <GiHamburgerMenu onClick={() => {setIsNavOpen((prev) => !prev); handleSecondClick()}}  className={`${newState}`}  />
+          <GrClose onClick={() => {setIsNavOpen((prev) => !prev); handleSecondClick()}}  className={`${newStates}`} />
           </div>
         </section>
 
         {/* menu open */}
-        <section className={isNavOpen ? "showMenu overflow-hidden absolute flex flex-col items-center rounded-l-[8px] justify-center bg-[white] font-IBM top-[99%] right-0 w-[40%]  py-[3vh] sm:w-[30%]": "hideMenu"}>
+        <section className={isNavOpen ? "showMenu overflow-hidden absolute flex flex-col items-center rounded-l-[8px] justify-center bg-[white] font-IBM top-[99%] right-0 w-[50%] py-[3vh] sm:w-[40%]": "hideMenu"}>
         <Link
             to="/"
-            className="font-semibold text-[#370E00] pt-[1vh] pb-[3vh] text-[1rem] ssm:pb-[4vh] ssm:text-[1.2rem] sm:text-[1rem]"
+            className="font-semibold text-[#370E00] pt-[1vh] pb-[3vh] text-[1.2rem] ssm:pb-[4vh] ssm:text-[1.4rem] sm:text-[1.5rem]"
           >
             Home
           </Link>
           <Link
             to="/recipes"
-            className="font-semibold text-[#370E00] pb-[3vh] text-[1rem] ssm:pb-[4vh] ssm:text-[1.2rem] sm:text-[1rem]"
+            className="font-semibold text-[#370E00] pb-[3vh] text-[1.2rem] ssm:pb-[4vh] ssm:text-[1.4rem] sm:text-[1.5rem]"
           >
             Recipes
           </Link>
           <Link
             to="/about"
-            className="font-semibold text-[#370E00] pb-[3vh] text-[1rem] ssm:pb-[4vh] ssm:text-[1.2rem] sm:text-[1rem]"
+            className="font-semibold text-[#370E00] pb-[3vh] text-[1.2rem] ssm:pb-[4vh] ssm:text-[1.4rem] sm:text-[1.5rem]"
           >
             About
           </Link>
           <Link
             to="/contact"
-            className="font-semibold text-[#370E00] pb-[3vh] text-[1rem] ssm:pb-[4vh] ssm:text-[1.2rem] sm:text-[1rem]"
+            className="font-semibold text-[#370E00] pb-[3vh] text-[1.2rem] ssm:pb-[4vh] ssm:text-[1.4rem] sm:text-[1.5rem]"
           >
             Contact
           </Link>
