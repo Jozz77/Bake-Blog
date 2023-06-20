@@ -9,8 +9,8 @@ export default function LoveIcon() {
     function handleClick() {
       setToggle((toggle) => !toggle);
     }
-    let checkState = toggle ? "lovenofill text-[#370E00] text-[0.8rem] md:text-[1rem] lg:text-[1.2rem] xl:text-[1.5rem]" : "hidden";
-    let checkStates = toggle ? "hidden" : "lovefill text-[#CC3333] text-[0.8rem] md:text-[1rem] lg:text-[1.2rem] xl:text-[1.5rem]";
+    let checkState = toggle ? "lovenofill text-[#370E00] text-[1rem] sm:text-[0.8rem] md:text-[1rem] lg:text-[1.2rem] xl:text-[1.5rem]" : "hidden";
+    let checkStates = toggle ? "hidden" : "lovefill text-[#CC3333] text-[1rem] sm:text-[0.8rem] md:text-[1rem] lg:text-[1.2rem] xl:text-[1.5rem]";
   
 
   return (
