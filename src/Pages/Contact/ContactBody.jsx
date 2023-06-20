@@ -35,7 +35,7 @@ export default function ContactBody() {
 
             <textarea name="" id="" cols="30" rows="10" className="resize-none w-full mt-[1vh] pt-[2vh] px-[2%] text-[1rem] text-[#370E00] mb-[3vh] leading-[130%] border-[#370E00] border-[1px] border-solid bg-transparent outline-none placeholder:text-[1rem] placeholder:text-[#370E00] ssm:placeholder:text-[1.2rem] ssm:text-[1.2rem]" placeholder="Write a comment..."></textarea>
             <div className="flex justify-end w-full">
-              <button className="py-[1vh] hover:bg-[#B5C7A5] hover:border-[#B5C7A5] px-[2%] text-right rounded-[8px] font-bold  text-[1rem] text-[#370E00] border-[#370E00] border-[1px] border-solid bg-transparent ssm:text-[1.1rem]">Submit</button>
+              <button className="py-[1vh] hover:bg-[#B5C7A5] hover:border-[#B5C7A5] px-[2%] rounded-[8px] font-bold  text-[1rem] text-[#370E00] border-[#370E00] border-[1px] border-solid bg-transparent ssm:text-[1.1rem]">Submit</button>
             </div>
           </form>
         </div>

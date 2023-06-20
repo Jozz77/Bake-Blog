@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Logo from "./Assets/Logo.png";
 import Profile from "./Assets/Profile.png";
 import { AiOutlineSearch } from "react-icons/ai";
-import { GrClose } from "react-icons/gr";
+import { CgClose } from "react-icons/cg";
 import { GiHamburgerMenu } from "react-icons/gi";
 // import { NavHashLink } from 'react-router-hash-link';
 import "./Header.css";
@@ -91,7 +91,7 @@ export default function Header() {
                 type="text"
                 placeholder="Search"
               />
-              <AiOutlineSearch
+              <CgClose
                 onClick={() => {
                   handleClick();
                 }}
@@ -138,7 +138,7 @@ export default function Header() {
                 type="text"
                 placeholder="Search"
               />
-              <GrClose
+              <CgClose
                 onClick={() => {
                   handleClick();
                 }}
@@ -151,7 +151,7 @@ export default function Header() {
           </div>
           <div>
           <GiHamburgerMenu onClick={() => {setIsNavOpen((prev) => !prev); handleSecondClick()}}  className={`${newState}`}  />
-          <GrClose onClick={() => {setIsNavOpen((prev) => !prev); handleSecondClick()}}  className={`${newStates}`} />
+          <CgClose onClick={() => {setIsNavOpen((prev) => !prev); handleSecondClick()}}  className={`${newStates}`} />
           </div>
         </section>
 
