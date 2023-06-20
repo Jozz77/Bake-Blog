@@ -7,18 +7,18 @@ import LoveIcon from "../LoveIcon/LoveIcon";
 export default function PostsCard(props) {
 
   return (
-    <div className="PostsCard bg-[#E8EFE1] w-[48%] px-[1.5%] py-[1vh] lg:w-[48%] lg:py-[2vh] xl:w-[48%]">
+    <div className="PostsCard bg-[#E8EFE1] w-[100%] px-[1.5%] py-[1vh] sm:w-[48%] lg:w-[48%] lg:py-[2vh] xl:w-[48%]">
       <Link to={props.link}>
         <div className="follow">
           <div>
             <img className="w-full" src={props.img} alt="" />
           </div>
           <div className="des-content-top absolute top-0 left-0 bottom-0 right-0 ">
-            <div className=" bg-[#B5C7A5] absolute top-0 left-0 bottom-0 right-0 py-[1vh] px-[5%] xl:y-[3vh]">
-              <h1 className="text-[1.1rem] font-normal text-[#A62B00] leading-[120%] md:text-[1.2rem]  lg:text-[1.4rem] xl:text-[1.9rem] ">
+            <div className=" bg-[#B5C7A5] absolute top-0 left-0 bottom-0 right-0 py-[0.7vh] ssm:py-[1vh] px-[5%] xl:y-[3vh]">
+              <h1 className="text-[1.2rem] font-normal text-[#A62B00] leading-[120%] ssm;text-[1.4rem] sm:text-[1.1rem] md:text-[1.2rem] lg:text-[1.4rem] xl:text-[1.9rem] ">
                 {props.hoverTitle}
               </h1>
-              <p className="text-[0.65rem] font-IBM text-[#370E00] leading-[120%] pt-[0.7vh] md:text-[0.75rem]  lg:text-[0.9rem] xl:text-[1.05rem] xl:pt-[2vh]">
+              <p className="text-[0.7rem] font-IBM text-[#370E00] leading-[120%] pt-[0.7vh] ssm:text-[0.95rem] sm:text-[0.65rem] md:text-[0.75rem]  lg:text-[0.9rem] xl:text-[1.05rem] xl:pt-[2vh]">
                 {props.hoverText}
               </p>
             </div>

@@ -13,4 +13,21 @@
     border: none;
     
   }
+  @media screen and (max-width: 640px) {
+    .swiper-pagination{
+      position: absolute !important;
+      top: 90% !important;
+  }
+  .swiper-pagination-bullet {
+    background-color: transparent !important;
+    transform: scale(200%);
+    border: 1px solid #fd8255;
+    margin-right: 2% !important;
+  }
+  .swiper-pagination-bullet-active {
+    background: #B5C7A5 !important;
+    border: none;
+    
+  }
+  }
   

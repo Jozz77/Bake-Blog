@@ -1,24 +1,13 @@
 import { useState } from "react";
 import SomethingOven from "../../Components/SomethingOven/SomethingOven";
 import TypewriterSection from "../../Components/TypewriterSection/TypewriterSection";
-import { AiOutlineSearch } from "react-icons/ai";
 import FoodPostsCard from "../../Components/FoodPostsCard/FoodPostsCard";
-import CardHero4 from "./Assets/CardHero4.png";
-import CardHero3 from "./Assets/CardHero3.png";
 import First1 from './Assets/First1.png'
 import First2 from './Assets/First2.png'
-import First3 from './Assets/First3.png'
 import First4 from './Assets/First4.png'
 import First5 from './Assets/First5.png'
 import First6 from './Assets/First6.png'
 import First7 from './Assets/First7.png'
-import Image1 from './Assets/Image1.png'
-import Image2 from './Assets/Image2.png'
-import Image3 from './Assets/Image3.png'
-import Image4 from './Assets/Image4.png'
-import Image5 from './Assets/Image5.png'
-import Image6 from './Assets/Image6.png'
-import Image7 from './Assets/Image7.png'
 
 export default function RecipesBody() {
   const [toogle, setToggle] = useState(1);
@@ -34,7 +23,7 @@ export default function RecipesBody() {
       </section>
 
       <section className="flex justify-center items-center px-[5%] my-[3vh] lg:my-[4vh] xl:my-[5vh] ">
-        <div className="flex justify-between w-[90%] font-normal text-[1.5rem] leading-[120%] md:w-[70%]  xl:text-[1.7rem] ">
+        <div className="flex justify-between w-[100%] font-normal text-[1rem] leading-[120%] ssm:text-[1.3rem] sm:text-[1.5rem] sm:w-[90%] md:w-[70%]  xl:text-[1.7rem] ">
           <button
             className={
               toogle === 1

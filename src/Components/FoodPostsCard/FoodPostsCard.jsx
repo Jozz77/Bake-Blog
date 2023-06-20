@@ -7,7 +7,7 @@ import ShareIcon from "../LoveIcon/ShareIcon";
 export default function FoodPostsCard(props) {
 
   return (
-    <div className="FoodPostsCard bg-[#E8EFE1] w-[32%] px-[1.5%] py-[1vh] lg:w-[31%] lg:py-[2vh] xl:w-[30%]">
+    <div className="FoodPostsCard bg-[#E8EFE1] w-[48%] px-[1.5%] py-[1vh] lg:w-[31%] sm:w-[32%] lg:py-[2vh] xl:w-[30%]">
       <Link to={props.link}>
         <div className="follow">
           <div>
@@ -18,7 +18,7 @@ export default function FoodPostsCard(props) {
           </div>
         </div>
         <div className="flex justify-between items-center pt-[1vh] lg:pt-[2vh]">
-          <h2 className="hover:text-[#370E00] font-normal text-[#A62B00] text-[0.9rem] leading-[120%]  md:text-[1rem] lg:text-[1.3rem]  xl:text-[1.6rem] ">
+          <h2 className="hover:text-[#370E00] font-normal text-[#A62B00] text-[0.8rem] leading-[120%] ssm:text-[0.9rem] md:text-[1rem] lg:text-[1.3rem]  xl:text-[1.6rem] ">
             {props.title}
           </h2>
           <div className="">
@@ -26,7 +26,7 @@ export default function FoodPostsCard(props) {
           </div>
         </div>
 
-        <p className="font-normal font-IBM text-[#370E00] text-[0.7rem] leading-[150%] pt-[0.5vh] md:text-[0.8rem] lg:text-[1rem] lg:pt-[1vh] xl:text-[1.2rem] ">
+        <p className="font-normal h-[8vh] font-IBM text-[#370E00] text-[0.6rem] leading-[150%] pt-[0.5vh] ssm:h-[auto] ssm:text-[0.7rem] md:text-[0.8rem] lg:text-[1rem] lg:pt-[1vh] xl:text-[1.2rem] ">
           {props.text}
         </p>
       </Link>
