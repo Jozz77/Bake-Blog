@@ -31,7 +31,7 @@ header{
 }
 @keyframes slideIn {
     0%{
-      transform: translateX(100%);
+      transform: translateX(-100%);
       z-index: 20;
       opacity: 0;
     }
