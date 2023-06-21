@@ -42,16 +42,17 @@
 .sugar-container{
   overflow: hidden;
 }
-.sugar{
+.sugar-text{
   transform: translateX(0%);
     transition: transform 0.5s ease;
 }
-.sugar-container:hover .sugar{
-  transform: translateX(100%);
-  margin-right: 5%;
+.sugar-container:hover .sugar-text{
+  transform: translateX(118%);
+  position: absolute;
+  left: -10%;
   padding-left: 5%;
-  padding-right: 0;
-  width: 45%;
+  width: 50%;
+
 }
 
 .sugarImg{
@@ -59,8 +60,5 @@
     transition: transform 0.5s ease;
 }
 .sugar-container:hover .sugarImg{
-  transform: translateX(-100%);
-  margin-left: 0%;  
-  padding-right: 0;
-  /* width: 60%; */
+  transform: translateX(-82%);
 }

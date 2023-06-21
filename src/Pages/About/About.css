@@ -8,8 +8,8 @@
 }
 .sugar-container-about:hover .sugarAbout{
   transform: translateX(-100%);
-  margin-left: 5%;
-  /* margin-right: -5%; */
+  width: 55%;
+  right: -10%;
   padding-right: 5%;
 }
 
@@ -19,9 +19,9 @@
 }
 .sugar-container-about:hover .sugarImgAbout{
   transform: translateX(100%);
-  /* padding-left: 0%; */
-  /* width: 60%; */
 }
+
+
 
 .content-container{
   transition: all 0.3s ease-in-out;

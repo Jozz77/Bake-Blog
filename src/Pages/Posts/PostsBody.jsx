@@ -13,12 +13,12 @@ import Image3 from "./Assets/Image3.png";
 import "swiper/css";
 import "swiper/css/pagination";
 import PostsCard from "../../Components/PostsCard/PostsCard";
-import ShareIcon from "../../Components/LoveIcon/ShareIcon";
+import ShareIcon from "../../Components/ShareIcon/ShareIcon";
 
 export default function PostsBody(props) {
   return (
     <div className="mt-[10vh] sm:mt-[12vh] lg:mt-[15vh]">
-      <section className=" px-[10%] my-[3vh] lg:px-[15%] lg:my-[5vh]  ">
+      <section className=" px-[10%] my-[3vh] lg:px-[15%] lg:my-[5vh] sm:pb-[3vh] ">
         <div className="flex justify-between ">
           <Link
             to="/recipes"
@@ -54,10 +54,10 @@ export default function PostsBody(props) {
       </section>
 
       <section className="px-[10%] lg:px-[15%] flex justify-between items-center pb-[2vh]">
-        <h1 className="text-[#A62B00] font-normal text-[1.5rem] leading-[120%] ssm:text-[1.8rem] sm:text-[2.3rem] md:text-[2.8rem]  lg: text-[3.2rem]xl:text-[3.5rem]  ">
+        <h1 className="text-[#A62B00] font-normal text-[1.3rem] leading-[120%] ssm:text-[1.8rem] sm:text-[2.3rem] md:text-[2.8rem]  lg: text-[3.2rem]xl:text-[3.5rem]  ">
           {props.title}
         </h1>
-        <div className='w-[10%]'>
+        <div className=''>
           <ShareIcon />
         </div>
       </section>

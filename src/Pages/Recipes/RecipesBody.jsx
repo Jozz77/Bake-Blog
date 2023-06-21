@@ -23,7 +23,7 @@ export default function RecipesBody() {
       </section>
 
       <section className="flex justify-center items-center px-[5%] my-[3vh] lg:my-[4vh] xl:my-[5vh] ">
-        <div className="flex justify-between w-[100%] font-normal text-[1rem] leading-[120%] ssm:text-[1.3rem] sm:text-[1.5rem] sm:w-[90%] md:w-[70%]  xl:text-[1.7rem] ">
+        <div className="flex justify-between w-[100%] font-normal text-[1rem] leading-[120%] ssm:text-[1.3rem] sm:text-[1.5rem] sm:w-[90%] md:w-[70%] sm:pb-[3vh] xl:text-[1.7rem] ">
           <button
             className={
               toogle === 1
@@ -79,7 +79,7 @@ export default function RecipesBody() {
       </section>
 
       {/* switch section */}
-      <section className="px-[5%] ">
+      <section className="px-[5%] pb-[5vh] ">
         {/* All posts section */}
         <div
         
@@ -91,8 +91,8 @@ export default function RecipesBody() {
             img={First1}
             hoverImg={First5}
             link='/posts1'
-            title="Easiest & Tasty Cake"
-            text=" Bake is a beloved dessert that is enjoyed by people all over the world. cake is a staple of..."
+            title="Tasty Cake"
+            text=" Bake is a beloved dessert that is enjoyed by people all over the world. ca..."
           />
            <FoodPostsCard
             img={First2}
@@ -112,21 +112,21 @@ export default function RecipesBody() {
             link='/posts3'
             hoverImg={First7}
             title="Crisp Churros"
-            text="Crisp churros are a delicious fried pastry that originated in Spain but have become a popular... "
+            text="Crisp churros are a delicious fried pastry that originated in Spain but is ..."
           />
            <FoodPostsCard
             img={First5}
             hoverImg={First2}
             link='/posts1'
             title="Chocolate Cookie"
-            text="Chocolate cookies are a delicious and indulgent treat that are loveds..."
+            text="Chocolate cookies are a delicious and indulgent treat that are loveds by th..."
           />
            <FoodPostsCard
             img={First6}
             hoverImg={First1}
             link='/posts2'
             title="PiePeach & Cream"
-            text="Peach and cream pie is a classic dessert that is perfect for summertime...."
+            text="Peach and cream pie is a classic dessert that is perfect for summertime and ..."
           />
            <FoodPostsCard
             img={First7}

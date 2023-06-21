@@ -17,17 +17,17 @@ export default function ContactBody() {
               <input type="text" name="firstname" className="mt-[1vh] border-b-[#370E00] border-b-[1px] border-b-solid bg-transparent outline-none w-full " />
             </div>
             
-            <div className="w-[100%] text-[1rem] text-[#370E00] mb-[3vh] leading-[130%  ssm:text-[1.2rem] sm:w-[49%]">
+            <div className="w-[100%] text-[1rem] text-[#370E00] mb-[3vh] leading-[130%]  ssm:text-[1.2rem] sm:w-[49%]">
               <label htmlFor="lastname">Last Name</label>
               <br />
               <input type="text" name="lastname" className="mt-[1vh] border-b-[#370E00] border-b-[1px] border-b-solid bg-transparent outline-none w-full " />
             </div>
-            <div className="w-[100%] text-[1rem] text-[#370E00] mb-[3vh] leading-[130%  ssm:text-[1.2rem] sm:w-[49%]">
+            <div className="w-[100%] text-[1rem] text-[#370E00] mb-[3vh] leading-[130%]  ssm:text-[1.2rem] sm:w-[49%]">
               <label htmlFor="email">Email*</label>
               <br />
               <input type="text" name="email" required className="mt-[1vh] border-b-[#370E00] border-b-[1px] border-b-solid bg-transparent outline-none w-full " />
             </div>
-            <div className="w-[100%] text-[1rem] text-[#370E00] mb-[3vh] leading-[130%  ssm:text-[1.2rem] sm:w-[49%]">
+            <div className="w-[100%] text-[1rem] text-[#370E00] mb-[3vh] leading-[130%]  ssm:text-[1.2rem] sm:w-[49%]">
               <label htmlFor="subject">Subject</label>
               <br />
               <input type="text" name="subject" className="mt-[1vh] border-b-[#370E00] border-b-[1px] border-b-solid bg-transparent outline-none w-full " />

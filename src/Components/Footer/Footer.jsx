@@ -15,11 +15,11 @@ export default function Footer() {
       <section className="flex flex-wrap gap-[3%] md:gap-[5%] lg:gap-[7%]">
         <div className="w-[100%] sm:w-[40%] md:w-[35%] lg:w-[30%]">
           <Link to="/">
-          <div className="flex items-center gap-[5%]">
+          <div className="flex items-center gap-[0%] ssm:gap-[5%]">
             <div>
-              <img className="w-full" src={Logo} alt="Logo" />
+              <img className="w-[60%] ssm:w-full" src={Logo} alt="Logo" />
             </div>
-            <p className="text-normal text-[#370E00] text-[1.2rem] md:text-[1.4rem] leading-[160%] ">
+            <p className="text-normal text-[#370E00] ml-[-6%] text-[1rem] ssm:ml-[0] ssm:text-[1.2rem] md:text-[1.2rem] lg:text-[1.4rem] leading-[160%] ">
               Flour Queen
             </p>
           </div>

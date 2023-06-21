@@ -35,7 +35,7 @@ export default function HomePageBody() {
                 When Life Gives You Flour and Butter, You Better Bake
               </h2>
               <Link to="/recipes">
-                <button className="hover:bg-[#B5C7A5] hover:border-[#B5C7A5] rounded-[8px] text-[#370E00] font-normal text-[0.9rem] w-[30%] mt-[3vh] mx-[35%] leading-[24px] bg-[#F3F6F1] py-[1vh] ssm:text-[1rem] md:text-[1.3rem] lg:mt-[5vh]">
+                <button className="hover:bg-[#B5C7A5] hover:border-[#B5C7A5] rounded-[8px] text-[#370E00] font-normal text-[0.9rem] w-[30%] mt-[3vh] mx-[35%] leading-[24px] bg-[#F3F6F1] py-[1.5vh] ssm:text-[1rem] md:text-[1.3rem] lg:mt-[5vh]">
                   All Recipes
                 </button>
               </Link>
@@ -54,7 +54,7 @@ export default function HomePageBody() {
 
       <section className="px-[5%] mt-[1vh] lg:mt-[2vh] xl:mt-[4vh]">
         <div className="flex justify-center py-[1.5vh] gap-[2%] md:py-[2vh] lg:py-[3vh] ">
-          <p className="text-[#A62B00] overflow-hidden font-normal text-[1.7rem] leading-[150%] md:text-[2rem] lg:text-[2.6rem] xl:text-[3rem]">
+          <p className="text-[#A62B00] overflow-hidden font-normal text-[1.7rem] leading-[150%] w-[40%] ssm:w-[30%] sm:w-[20%] md:text-[2rem] md:w-[20%] lg:w-[19%] xl:w-[18%] lg:text-[2.6rem] xl:text-[3rem]">
           <TextTransition springConfig={presets.gentle}>{TEXTS[index % TEXTS.length]}</TextTransition>
           </p>
           <p className="text-[#370E00] font-normal text-[1.7rem] leading-[150%] md:text-[2rem] lg:text-[2.6rem] xl:text-[3rem]">
@@ -83,15 +83,15 @@ export default function HomePageBody() {
         </div>
       </section>
 
-      <section className="hidden sugar-container sm:flex px-[5%]  flex-wrap relative py-[5vh]">
-        <div className="sugar w-[50%] mr-[-5%] my-[1.5%] py-[1.5vh] bg-[#F3F6F1] z-[1] md:my-[3%] md:py-[2vh] lg:my-[3%] xl:py-[6vh]">
-          <h2 className="text-[#A62B00] pb-[0.5vh] font-normal text-[1.2rem] leading-[120%] w-[85%] md:w-[80%] md:text-[1.5rem] lg:w-[90%] lg:pb-[1vh] lg:text-[2.1rem] xl:w-[70%] xl:text-[2.6rem] ">
+      <section className="hidden sugar-container sm:flex px-[5%] relative py-[5vh]">
+        <div className="sugar-text w-[45%] my-[1.5%] py-[1.5vh] bg-[#F3F6F1] absolute top-[12%] left-[5%] z-[1] lg:top-[10%] lg:py-[3vh]  xl:py-[5vh]">
+          <h2 className="text-[#A62B00] pb-[0.5vh] font-normal text-[1.2rem] leading-[120%] w-[85%] md:w-[80%] sm:text-[1.3rem] md:text-[1.5rem] lg:w-[90%] lg:pb-[1vh] lg:text-[2.5rem] xl:w-[70%] xl:text-[2.8rem] ">
             Sugar, Spice and Everything Nice
           </h2>
-          <h4 className="text-[#370E00] font-IBM font-normal pb-[0.5vh] text-[0.95rem] leading-[130%] md:text-[1.1rem] lg:pb-[1.5vh] lg:text-[1.4rem] xl:text-[1.7rem]">
+          <h4 className="text-[#370E00] font-IBM font-normal pb-[0.5vh] text-[0.95rem] leading-[130%] sm:text-[1rem] md:text-[1.2rem] lg:pb-[1.5vh] lg:text-[1.5rem] xl:text-[1.8rem]">
             Hello, I’m Marriet
           </h4>
-          <p className="text-[#370E00] font-IBM font-normal text-[0.75rem] leading-[130%] pr-[5%] mb-[1.5vh] md:text-[0.8rem] lg:mb-[3vh] lg:text-[1.1rem] xl:text-[1.2rem]">
+          <p className="text-[#370E00] font-IBM font-normal text-[0.75rem] leading-[130%] pr-[5%] mb-[1vh] sm:text-[0.8rem] md:text-[1rem] lg:mb-[3vh] lg:text-[1.1rem] xl:text-[1.4rem]">
             I’m a passionate baker who has been creating delicious baked goods
             for over 10 years. I grew up in a family of bakers, and learned
             everything I know about baking from my grandmother, who ran a small
@@ -101,12 +101,12 @@ export default function HomePageBody() {
           </p>
           <Link
             to=""
-            className="hover:bg-[#B5C7A5] hover:border-[#B5C7A5] text-[#370E00] font-IBM font-bold text-[0.75rem] border-solid border-[#000000] border-[0.5px] py-[0.5vh] px-[5%] leading-[130%] md:text-[0.85rem] lg:py-[1vh] lg:text-[1.1rem]"
+            className="hover:bg-[#B5C7A5] hover:border-[#B5C7A5] rounded-[8px] text-[#370E00] font-IBM font-bold text-[0.75rem] border-solid border-[#000000] border-[0.5px] py-[0.5vh] px-[5%] leading-[130%] md:text-[0.8rem] lg:py-[1vh] lg:text-[1rem]"
           >
             About Me
           </Link>
         </div>
-        <div className="sugarImg w-[50%] ">
+        <div className="sugarImg w-[55%] ml-[45%]">
           <img className="w-full" src={SugarGirl} alt="Girl with cakes" />
         </div>
       </section>

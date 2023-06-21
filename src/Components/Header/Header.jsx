@@ -34,16 +34,16 @@ export default function Header() {
     let newStates = tog ? "hidden" : "text-[1.5rem] ssm:text-[1.8rem] sm:text-[1.9rem] text-[#370E00]";
 
   return (
-    <header className="heading bg-[#DCE7D2]">
-      <div className="hidden md:flex fixed top-0 w-full justify-between z-10 px-[5%] py-[1.5vh] md:py-[2vh] ">
-        <section className="flex items-center gap-[3%] w-[25%] md:w-[25%] lg:gap-[7%] xl:w-[20%]">
+    <header>
+      <div className="hidden md:flex bg-[#F3F6F1] max-w-[1440px] fixed top-0 w-full justify-between z-10 px-[5%] py-[1.5vh] md:py-[2vh] ">
+        <section className="flex items-center gap-[3%] w-[20%] md:w-[26%] md:gap-[3%] xl:w-[20%]">
           <Link to="/">
             <div>
-              <img className="w-[90%] lg:w-full" src={Logo} alt="Logo" />
+              <img className="w-full" src={Logo} alt="Logo" />
             </div>
           </Link>
           <Link to="/">
-            <p className="text-normal text-[#370E00] text-[1rem] md:text-[1rem] lg:text-[1.4rem] leading-[32px] ">
+            <p className="text-normal text-[#370E00] text-[1.2rem] md:text-[1.2rem] lg:text-[1.4rem] leading-[32px] ">
               Flour Queen
             </p>
           </Link>
@@ -109,15 +109,15 @@ export default function Header() {
       </div>
 
       {/* mobile nav */}
-      <div className="flex px-[5%] py-[1.5vh] z-10 justify-between items-center w-full fixed top-0 md:hidden">
-      <section className="flex items-center w-[40%] ssm:w-[40%]sm:w-[30%]">
-          <Link to="/" className="w-[25%] mr-[5%] ssm:w-[30%]">
+      <div className="flex bg-[#F3F6F1] px-[5%] py-[1.5vh] z-10 justify-between items-center w-full fixed top-0 md:hidden">
+      <section className="flex items-center w-[60%] ssm:w-[65%] sm:w-[40%]">
+          <Link to="/" className="w-[25%] mr-[5%] ssm:w-[27%] sm:w-[25%]">
             <div>
               <img className="w-[100%]" src={Logo} alt="Logo" />
             </div>
           </Link>
-          <Link to="/" className="w-[70%] ssm:w-[65%]">
-            <p className="text-normal text-[#370E00] text-[0.85rem] ssm:text-[1rem] sm:text-[1rem] ">
+          <Link to="/" className="w-[70%] ssm:w-[65%] sm:w-[65%]">
+            <p className="text-normal text-[#370E00] text-[1rem] ssm:text-[1.2rem] ">
               Flour Queen
             </p>
           </Link>

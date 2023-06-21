@@ -10,16 +10,16 @@ export default function AboutBody() {
         <TypewriterSection FirstText="A" SecondText="bout Me" />
       </section>
 
-      <section className="hidden relative sugar-container-about sm:flex items-center py-[2vh] xl:py-[4vh]">
+      <section className="hidden sugar-container-about sm:flex relative items-center py-[2vh] xl:py-[4vh]">
         <div className="sugarImgAbout w-[50%]">
           <img src={SugarGirl} className=" w-full" alt="SugarGirl" />
         </div>
 
-        <div className="sugarAbout bg-[#F3F6F1] w-[55%] ml-[-2%] py-[1vh] pl-[2%] pr-[5%] md:ml-[-3%] md:py-[2vh] md:pl-[3%] lg:ml-[-5%] lg:pr-[5%] lg:pl-[5%] lg:w-[50%] xl:py-[5vh] ">
+        <div className="sugarAbout bg-[#F3F6F1] w-[50%] absolute right-[5%] py-[1vh] pl-[5%] md:py-[1.5vh] lg:py-[5vh] ">
           <h2 className="text-[rgb(166,43,0)] font-IBM font-medium text-[1.3rem] leading-[120%] mb-[0.5vh] md:mb-[1vh] md:text-[1.7rem] lg:font-normal lg:text-[2.3rem] xl:mb-[2vh] xl:text-[2.9rem]">
             Hello, I’m Roberta
           </h2>
-          <p className=" text-[#370E00] font-IBM font-normal text-[0.7rem] leading-[150%] md:text-[0.8rem] lg:text-[1rem] xl:text-[1.2rem] ">
+          <p className=" text-[#370E00] font-IBM font-normal text-[0.7rem] leading-[150%] md:text-[0.8rem] lg:text-[1rem] xl:text-[1.25rem] ">
             I’m a passionate baker who has been creating delicious baked goods
             for over 10 years. I grew up in a family of bakers, and learned
             everything I know about baking from my grandmother, who ran a small
@@ -27,7 +27,7 @@ export default function AboutBody() {
             started my own bakery, which quickly became a local favorite. My
             bakery specializes in artisanal bread.
           </p>
-          <p className=" text-[#370E00] font-IBM font-normal text-[0.7rem] leading-[150%] md:text-[0.8rem] lg:text-[1rem] xl:text-[1.2rem]  mt-[0.5vh] md:mt-[1vh]">
+          <p className=" text-[#370E00] font-IBM font-normal text-[0.7rem] leading-[150%] md:text-[0.8rem] lg:text-[1rem] xl:text-[1.25rem] mt-[0.5vh] md:mt-[1vh]">
             I also enjoys sharing my knowledge and passion for baking with
             others. I regularly hosts baking classes for both kids and adults,
             teaching them how to make everything from bread to macarons. For me,
@@ -44,8 +44,8 @@ export default function AboutBody() {
           <img src={SugarGirl} className=" w-full" alt="SugarGirl" />
         </div>
 
-        <div className=" bg-[#F3F6F1] px-[5%] w-[100%]  py-[1vh]">
-        <h2 className="text-[#A62B00] pb-[1vh] pr-[5%] font-normal text-[1.2rem] leading-[120%] w-[95%] ssm:text-[1.6rem] ">
+        <div className=" bg-[#F3F6F1] px-[5%] w-[100%] py-[1vh]">
+          <h2 className="text-[#A62B00] pb-[1vh] pr-[5%] font-normal text-[1.2rem] leading-[120%] w-[95%] ssm:text-[1.6rem] ">
             Sugar, Spice and Everything Nice
           </h2>
           <h2 className="text-[rgb(166,43,0)] font-IBM font-medium text-[1rem] leading-[120%] mb-[0.7vh] ssm:text-[1.3rem]">
@@ -83,10 +83,10 @@ export default function AboutBody() {
                   Culinary Content
                 </h4>
                 <p className="text-[#A62B00] font-IBM font-normal text-[0.8rem] ssm:text-[0.95rem] leading-[150%] sm:text-[0.8rem] md:text-[0.9rem] lg:text-[1rem] xl:text-[1.2rem] ">
-                  Lorem ipsum dolor sit amet consectetur. Et in aliquam
-                  consectetur ornare faucibus. Proin nisi ac pharetra quis odio
-                  orci massa. Diam sodales nibh pellentesque. Proin nisi ac
-                  pharetra quis odio orci massa. Diam sodales nibh pellentesque.
+                  I explore the diverse world of culinary content. Here are some
+                  of it; Classic recipes, international cuisine, healthy
+                  cooking, baking, food history, culinary techniques, food
+                  photography, food blogging, food science and culinary travel.
                 </p>
               </div>
               <div className="w-[100%] pb-[1.5vh] sm:w-[31.5%]">
@@ -94,10 +94,10 @@ export default function AboutBody() {
                   Online Classes
                 </h4>
                 <p className="text-[#A62B00] font-IBM font-normal text-[0.8rem] ssm:text-[0.95rem] leading-[150%] sm:text-[0.8rem] md:text-[0.9rem] lg:text-[1rem] xl:text-[1.2rem] ">
-                  Lorem ipsum dolor sit amet consectetur. Et in aliquam
-                  consectetur ornare faucibus. Proin nisi ac pharetra quis odio
-                  orci massa. Diam sodales nibh pellentesque. Proin nisi ac
-                  pharetra quis odio orci massa. Diam sodales nibh pellentesque.
+                  There are many online classes available on food that cater to
+                  various interests and skill levels. Here is my specialization:
+                  Cheese-making, baking, plant-based cooking , culinary
+                  techniques, wine tasting , food science and food safety
                 </p>
               </div>
               <div className="w-[100%] pb-[1.5vh] sm:w-[31.5%]">
@@ -105,10 +105,11 @@ export default function AboutBody() {
                   Social Media Advertsing
                 </h4>
                 <p className="text-[#A62B00] font-IBM font-normal text-[0.8rem] ssm:text-[0.95rem] leading-[150%] sm:text-[0.8rem] md:text-[0.9rem] lg:text-[1rem] xl:text-[1.2rem] ">
-                  Lorem ipsum dolor sit amet consectetur. Et in aliquam
-                  consectetur ornare faucibus. Proin nisi ac pharetra quis odio
-                  orci massa. Diam sodales nibh pellentesque. Proin nisi ac
-                  pharetra quis odio orci massa. Diam sodales nibh pellentesque.
+                  With its wide reach and ability to target specific
+                  demographics, social media advertising is a powerful tool for
+                  businesses of all sizes. In this article, we'll explore the
+                  world of social media advertising and how you can use it to
+                  maximize your reach.
                 </p>
               </div>
             </div>
