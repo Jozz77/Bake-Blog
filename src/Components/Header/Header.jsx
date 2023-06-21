@@ -22,16 +22,20 @@ export default function Header() {
     ? "hidden"
     : "search relative text-[0.75rem] font-IBM pb-[0.5vh] text-[#370E00] ssm:text-[0.8rem] sm:text-[0.9rem] md:text-[0.7rem] lg:text-[1rem] border-b-[1px] border-b-[#370E00] border-b-solid";
 
-    // mobile nav bar function
-    const [isNavOpen, setIsNavOpen] = useState(false);
-    const [tog, setTog] = useState(true);
+  // mobile nav bar function
+  const [isNavOpen, setIsNavOpen] = useState(false);
+  const [tog, setTog] = useState(true);
 
-    function handleSecondClick() {
-        setTog(tog => !tog);
-    }
+  function handleSecondClick() {
+    setTog((tog) => !tog);
+  }
 
-    let newState = tog ? "text-[1.5rem] ssm:text-[1.8rem] sm:text-[1.9rem] text-[#370E00]" : "hidden";
-    let newStates = tog ? "hidden" : "text-[1.5rem] ssm:text-[1.8rem] sm:text-[1.9rem] text-[#370E00]";
+  let newState = tog
+    ? "text-[1.5rem] ssm:text-[1.8rem] sm:text-[1.9rem] text-[#370E00]"
+    : "hidden";
+  let newStates = tog
+    ? "hidden"
+    : "text-[1.5rem] ssm:text-[1.8rem] sm:text-[2.2rem] text-[#370E00]";
 
   return (
     <header>
@@ -110,7 +114,7 @@ export default function Header() {
 
       {/* mobile nav */}
       <div className="flex bg-[#F3F6F1] px-[5%] py-[1.5vh] z-10 justify-between items-center w-full fixed top-0 md:hidden">
-      <section className="flex items-center w-[60%] ssm:w-[65%] sm:w-[40%]">
+        <section className="flex items-center w-[60%] ssm:w-[65%] sm:w-[40%]">
           <Link to="/" className="w-[25%] mr-[5%] ssm:w-[27%] sm:w-[25%]">
             <div>
               <img className="w-[100%]" src={Logo} alt="Logo" />
@@ -124,7 +128,7 @@ export default function Header() {
         </section>
 
         <section className="w-[60%] flex  justify-end  items-center">
-        <div className="overflow-hidden mr-[5%] pr-[20%}">
+          <div className="overflow-hidden mr-[5%] pr-[20%}">
             <AiOutlineSearch
               onClick={() => {
                 handleClick();
@@ -150,46 +154,116 @@ export default function Header() {
             <img className="w-full" src={Profile} alt="Profile" />
           </div>
           <div>
-          <GiHamburgerMenu onClick={() => {setIsNavOpen((prev) => !prev); handleSecondClick()}}  className={`${newState}`}  />
-          <CgClose onClick={() => {setIsNavOpen((prev) => !prev); handleSecondClick()}}  className={`${newStates}`} />
+            <GiHamburgerMenu
+              onClick={() => {
+                setIsNavOpen((prev) => !prev);
+                handleSecondClick();
+              }}
+              className={`${newState}`}
+            />
+            {/* <CgClose
+              onClick={() => {
+                setIsNavOpen((prev) => !prev);
+                handleSecondClick();
+              }}
+              className={`${newStates}`}
+            /> */}
           </div>
         </section>
 
         {/* menu open */}
-        <section className={isNavOpen ? "showMenu overflow-hidden absolute flex flex-col items-center rounded-l-[8px] justify-center bg-[white] font-IBM top-[99%] right-0 w-[50%] py-[3vh] sm:w-[40%]": "hideMenu"}>
-        <Link
+        <section
+          className={
+            isNavOpen
+              ? "showMenu overflow-hidden font-Playfair absolute h-[100vh] w-[100%] flex flex-col items-center  bg-[#F3F6F1] font-IBM top-[0] right-0 w-[50%] py-[1.5vh] "
+              : "hideMenu"
+          }
+        >
+          <div className="flex justify-between w-full items-center mb-[5vh] px-[5%]">
+            <section className="flex items-center w-[60%] ssm:w-[65%] sm:w-[40%]">
+              <Link
+                onClick={() => {
+                  setIsNavOpen((prev) => !prev);
+                  handleSecondClick();
+                }}
+                to="/"
+                className="w-[21%] mr-[5%] ssm:w-[21%] sm:w-[25%]"
+              >
+                <div>
+                  <img className="w-[100%]" src={Logo} alt="Logo" />
+                </div>
+              </Link>
+              <Link
+                onClick={() => {
+                  setIsNavOpen((prev) => !prev);
+                  handleSecondClick();
+                }}
+                to="/"
+                className="w-[70%] ssm:w-[65%] sm:w-[65%]"
+              >
+                <p className="text-normal font-Playfair text-[#370E00] text-[1rem] ssm:text-[1.2rem] ">
+                  Flour Queen
+                </p>
+              </Link>
+            </section>
+
+            <section>
+              <CgClose
+                onClick={() => {
+                  setIsNavOpen((prev) => !prev);
+                  handleSecondClick();
+                }}
+                className={`${newStates}`}
+              />
+            </section>
+          </div>
+
+          <Link
+            onClick={() => {
+              setIsNavOpen((prev) => !prev);
+              handleSecondClick();
+            }}
             to="/"
-            className="font-semibold text-[#370E00] pt-[1vh] pb-[3vh] text-[1.2rem] ssm:pb-[4vh] ssm:text-[1.4rem] sm:text-[1.5rem]"
+            className="font-medium text-[#370E00] pt-[1vh] pb-[2vh] text-[1.2rem] ssm:pb-[2vh] sm:pb-[4vh] ssm:text-[1.4rem] sm:text-[1.5rem]"
           >
             Home
           </Link>
+          <hr className="w-[40%] border-solid border-[1px] mb-[9vh] sm:mb-[7vh] lg:my-[3vh]" />
           <Link
+            onClick={() => {
+              setIsNavOpen((prev) => !prev);
+              handleSecondClick();
+            }}
             to="/recipes"
-            className="font-semibold text-[#370E00] pb-[3vh] text-[1.2rem] ssm:pb-[4vh] ssm:text-[1.4rem] sm:text-[1.5rem]"
+            className="font-medium text-[#370E00] pb-[2vh] text-[1.2rem] ssm:pb-[2vh] sm:pb-[4vh] ssm:text-[1.4rem] sm:text-[1.5rem]"
           >
             Recipes
           </Link>
+          <hr className="w-[40%] border-solid border-[1px] mb-[9vh] sm:mb-[7vh] lg:my-[3vh]" />
           <Link
+            onClick={() => {
+              setIsNavOpen((prev) => !prev);
+              handleSecondClick();
+            }}
             to="/about"
-            className="font-semibold text-[#370E00] pb-[3vh] text-[1.2rem] ssm:pb-[4vh] ssm:text-[1.4rem] sm:text-[1.5rem]"
+            className="font-medium text-[#370E00] pb-[2vh] text-[1.2rem] ssm:pb-[2vh] sm:pb-[4vh] ssm:text-[1.4rem] sm:text-[1.5rem]"
           >
             About
           </Link>
+          <hr className="w-[40%] border-solid border-[1px] mb-[9vh] sm:mb-[7vh] lg:my-[3vh]" />
           <Link
+            onClick={() => {
+              setIsNavOpen((prev) => !prev);
+              handleSecondClick();
+            }}
             to="/contact"
-            className="font-semibold text-[#370E00] pb-[3vh] text-[1.2rem] ssm:pb-[4vh] ssm:text-[1.4rem] sm:text-[1.5rem]"
+            className="font-medium text-[#370E00] pb-[2vh] text-[1.2rem] ssm:pb-[2vh] sm:pb-[4vh] ssm:text-[1.4rem] sm:text-[1.5rem]"
           >
             Contact
           </Link>
-          <Link
-            to="/"
-            className="hover:bg-[#B5C7A5] hover:border-[#B5C7A5] text-normal font-IBM text-[#370E00] font-bold text-[1rem] leading-[32px] py-[0.3vh] rounded-[8px] px-[10%] border-[0.5px] border-solid border-[#000000] ssm:text-[1.2rem] sm:text-[1rem]"
-          >
-            Login
-          </Link>
+          <hr className="w-[40%] border-solid border-[1px] mb-[9vh] sm:mb-[7vh] lg:my-[3vh]" />
         </section>
       </div>
-
     </header>
   );
 }
