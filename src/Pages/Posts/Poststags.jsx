@@ -8,7 +8,7 @@ export default function Poststags() {
 
   return (
     <div>
-      <small className="text-[#370E00] font-normal text-[0.9rem] text-justify leading-[150%] md:ext-[1rem]">
+      <small className="text-[#370E00] font-normal text-[0.9rem] text-justify leading-[150%] md:text-[1rem]">
         Tags
       </small>
       <p className="text-[#370E00] font-normal text-[1.2rem] text-justify leading-[150%] pb-[1vh] md:text-[1.3rem]  ">
@@ -22,8 +22,8 @@ export default function Poststags() {
       </div>
       <hr />
       <div className="flex justify-between items-center py-[2vh] w-full">
-        <div className="flex gap-[5%] w-[70%] pt-[0vh] ssm:pt-[1vh] text-[#370E00] font-normal text-[1.1rem] text-justify leading-[150%] ssm:w-[50%] sm:w-[40%] md:w-[30%] ">
-          <p>0 views</p>
+        <div className="flex gap-[0%] w-[70%] pt-[0vh] ssm:pt-[1vh] text-[#370E00] font-normal text-[1.1rem] text-justify leading-[150%] ssm:w-[50%] sm:gap-[5%] sm:w-[40%] md:w-[30%] ">
+          <p className="mr-[5%] sm:mr-[0]">0 views</p>
           <p>0 comments</p>
         </div>
         <div className="cursor-pointer ">

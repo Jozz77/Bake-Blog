@@ -20,7 +20,7 @@ export default function ShareIcon() {
     : "flex justify-between bg-[#B5C7A5] py-[1vh] px-[5%] ";
 
   return (
-    <div className="relative flex justify-end py-[1vh] px-[5%] ">
+    <div className="relative flex items-center justify-end py-[1vh] px-[5%] ">
       <AiOutlineShareAlt
        onClick={() => {
         handleClick();

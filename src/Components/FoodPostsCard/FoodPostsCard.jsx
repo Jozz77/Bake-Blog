@@ -6,7 +6,7 @@ import ShareIcon from "../ShareIcon/ShareIcon";
 
 export default function FoodPostsCard(props) {
   return (
-    <div className="FoodPostsCard bg-[#E8EFE1] w-[48%] px-[1.5%] py-[1vh] lg:w-[31%] sm:w-[32%] lg:py-[2vh] xl:w-[30%]">
+    <div className="FoodPostsCard bg-[#E8EFE1] mb-[1.5vh] w-[48%] px-[1.5%] py-[1vh] sm:mb-[1vh] lg:w-[31%] sm:w-[32%] lg:py-[2vh] xl:w-[30%]">
       <div className="follow">
         <div>
           <img className="w-full" src={props.img} alt="" />

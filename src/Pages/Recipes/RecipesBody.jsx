@@ -1,6 +1,5 @@
 import { useState } from "react";
 import SomethingOven from "../../Components/SomethingOven/SomethingOven";
-import { AiOutlineSearch } from "react-icons/ai";
 import { FiChevronDown } from "react-icons/fi";
 import TypewriterSection from "../../Components/TypewriterSection/TypewriterSection";
 import FoodPostsCard from "../../Components/FoodPostsCard/FoodPostsCard";
@@ -88,7 +87,10 @@ export default function RecipesBody() {
               <RecipeSearch />
             </div>
             <div className="px-[5%] relative z-[8] bg-[#DCE7D2] py-[1vh] flex justify-between items-center">
-              <h3 onClick={() => toogleTab(1)} className="font-normal text-[1rem] ssm:text-[1.3rem] text-[#370E00] ">
+              <h3
+                onClick={() => toogleTab(1)}
+                className="font-normal text-[1rem] ssm:text-[1.3rem] text-[#370E00] "
+              >
                 All Post
               </h3>
               <FiChevronDown
@@ -103,23 +105,35 @@ export default function RecipesBody() {
                 }}
                 className={`${checkStates}`}
               >
-                <h3 onClick={() => toogleTab(2)} className="font-normal text-[1rem] ssm:text-[1.3rem] mt-[1vh] mb-[2vh] text-[#370E00] ">
+                <h3
+                  onClick={() => toogleTab(2)}
+                  className="font-normal text-[1rem] ssm:text-[1.3rem] mt-[1vh] mb-[2vh] text-[#370E00] "
+                >
                   Popular
                 </h3>
-                <h3 onClick={() => toogleTab(3)} className="font-normal text-[1rem] ssm:text-[1.3rem] mb-[2vh] text-[#370E00] ">
+                <h3
+                  onClick={() => toogleTab(3)}
+                  className="font-normal text-[1rem] ssm:text-[1.3rem] mb-[2vh] text-[#370E00] "
+                >
                   Recent
                 </h3>
-                <h3 onClick={() => toogleTab(4)} className="font-normal text-[1rem] ssm:text-[1.3rem] mb-[2vh] text-[#370E00] ">
+                <h3
+                  onClick={() => toogleTab(4)}
+                  className="font-normal text-[1rem] ssm:text-[1.3rem] mb-[2vh] text-[#370E00] "
+                >
                   Sweet
                 </h3>
-                <h3 onClick={() => toogleTab(5)} className="font-normal text-[1rem] ssm:text-[1.3rem] mb-[2vh] text-[#370E00] ">
+                <h3
+                  onClick={() => toogleTab(5)}
+                  className="font-normal text-[1rem] ssm:text-[1.3rem] mb-[2vh] text-[#370E00] "
+                >
                   Savor
                 </h3>
               </div>
             </div>
           </section>
 
-          <div className="flex flex-wrap justify-between px-[5%] gap-x-[2%] gap-y-[2vh] lg:gap-x-[3%] lg:gap-y-[5vh]">
+          <div className="flex flex-wrap justify-between px-[5%] gap-y-[0] sm:gap-y-[2vh] lg:gap-x-[3%] lg:gap-y-[5vh]">
             <FoodPostsCard
               img={First1}
               hoverImg={First5}
@@ -166,120 +180,314 @@ export default function RecipesBody() {
         </div>
 
         {/* Popular section */}
-        <div
-          id="popular"
-          className={
-            toogle === 2
-              ? "block "
-              : "hidden"
-          }
-        >
-          
-          <div className="flex flex-wrap px-[5%] justify-between gap-x-[2%] gap-y-[2vh] lg:gap-x-[3%] lg:gap-y-[5vh]">
-          <FoodPostsCard
-            img={First1}
-            hoverImg={First5}
-            link="/posts2"
-            title="Easiest & Tasty Cake"
-            text=" Bake is a beloved dessert that is enjoyed by people all over the world. cake is a..."
-          />
-          <FoodPostsCard
-            img={First6}
-            hoverImg={First2}
-            link="/posts1"
-            title="PiePeach & Cream"
-            text="Peach and cream pie is a classic dessert that is perfect for summertime...."
-          />
-          <FoodPostsCard
-            img={First7}
-            hoverImg={First4}
-            link="/posts3"
-            title="Pizza crust"
-            text=" Pizza crust can be made using a sourdough starter or a pizza that is perfect..."
-          />
+        <div id="popular" className={toogle === 2 ? "block " : "hidden"}>
+          {/* mobile recipes header section */}
+          <section className="block mb-[2vh] sm:hidden">
+            <div className="px-[5%] py-[1vh] flex justify-between items-center">
+              <h3 className="font-normal text-[1.2rem] ssm:text-[1.5rem] text-[#370E00] ">
+                Recipes
+              </h3>
+              <RecipeSearch />
+            </div>
+            <div className="px-[5%] relative z-[8] bg-[#DCE7D2] py-[1vh] flex justify-between items-center">
+              <h3
+                onClick={() => toogleTab(2)}
+                className="font-normal text-[1rem] ssm:text-[1.3rem] text-[#370E00] "
+              >
+                Popular
+              </h3>
+              <FiChevronDown
+                onClick={() => {
+                  handleClick();
+                }}
+                className={`${checkState}`}
+              />
+              <div
+                onClick={() => {
+                  handleClick();
+                }}
+                className={`${checkStates}`}
+              >
+                <h3
+                  onClick={() => toogleTab(1)}
+                  className="font-normal text-[1rem] ssm:text-[1.3rem] mt-[1vh] mb-[2vh] text-[#370E00] "
+                >
+                  All Post
+                </h3>
+                <h3
+                  onClick={() => toogleTab(3)}
+                  className="font-normal text-[1rem] ssm:text-[1.3rem] mb-[2vh] text-[#370E00] "
+                >
+                  Recent
+                </h3>
+                <h3
+                  onClick={() => toogleTab(4)}
+                  className="font-normal text-[1rem] ssm:text-[1.3rem] mb-[2vh] text-[#370E00] "
+                >
+                  Sweet
+                </h3>
+                <h3
+                  onClick={() => toogleTab(5)}
+                  className="font-normal text-[1rem] ssm:text-[1.3rem] mb-[2vh] text-[#370E00] "
+                >
+                  Savor
+                </h3>
+              </div>
+            </div>
+          </section>
+
+          <div className="flex flex-wrap px-[5%] justify-between gap-y-[0] sm:gap-y-[2vh] lg:gap-x-[3%] lg:gap-y-[5vh]">
+            <FoodPostsCard
+              img={First1}
+              hoverImg={First5}
+              link="/posts2"
+              title="Easiest & Tasty Cake"
+              text=" Bake is a beloved dessert that is enjoyed by people all over the world. cake is a..."
+            />
+            <FoodPostsCard
+              img={First6}
+              hoverImg={First2}
+              link="/posts1"
+              title="PiePeach & Cream"
+              text="Peach and cream pie is a classic dessert that is perfect for summertime...."
+            />
+            <FoodPostsCard
+              img={First7}
+              hoverImg={First4}
+              link="/posts3"
+              title="Pizza crust"
+              text=" Pizza crust can be made using a sourdough starter or a pizza that is perfect..."
+            />
           </div>
         </div>
 
         {/* Recent section */}
-        <div
-          id="recent"
-          className={
-            toogle === 3
-              ? "flex flex-wrap justify-between gap-x-[2%] gap-y-[2vh] lg:gap-x-[3%] lg:gap-y-[5vh] "
-              : "hidden"
-          }
-        >
-          <FoodPostsCard
-            img={First6}
-            hoverImg={First1}
-            link="/posts3"
-            title="PiePeach & Cream"
-            text="Peach and cream pie is a classic dessert that is perfect for summertime...."
-          />
-          <FoodPostsCard
-            img={First4}
-            hoverImg={First7}
-            link="/posts2"
-            title="Crisp Churros"
-            text="Crisp churros are a delicious fried pastry that originated in Spain but have become a popular... "
-          />
+        <div id="recent" className={toogle === 3 ? "block " : "hidden"}>
+          {/* mobile recipes header section */}
+          <section className="block mb-[2vh] sm:hidden">
+            <div className="px-[5%] py-[1vh] flex justify-between items-center">
+              <h3 className="font-normal text-[1.2rem] ssm:text-[1.5rem] text-[#370E00] ">
+                Recipes
+              </h3>
+              <RecipeSearch />
+            </div>
+            <div className="px-[5%] relative z-[8] bg-[#DCE7D2] py-[1vh] flex justify-between items-center">
+              <h3
+                onClick={() => toogleTab(3)}
+                className="font-normal text-[1rem] ssm:text-[1.3rem] text-[#370E00] "
+              >
+                Recent
+              </h3>
+              <FiChevronDown
+                onClick={() => {
+                  handleClick();
+                }}
+                className={`${checkState}`}
+              />
+              <div
+                onClick={() => {
+                  handleClick();
+                }}
+                className={`${checkStates}`}
+              >
+                <h3
+                  onClick={() => toogleTab(1)}
+                  className="font-normal text-[1rem] ssm:text-[1.3rem] mt-[1vh] mb-[2vh] text-[#370E00] "
+                >
+                  All Post
+                </h3>
+                <h3
+                  onClick={() => toogleTab(2)}
+                  className="font-normal text-[1rem] ssm:text-[1.3rem] mb-[2vh] text-[#370E00] "
+                >
+                  Popular
+                </h3>
+                <h3
+                  onClick={() => toogleTab(4)}
+                  className="font-normal text-[1rem] ssm:text-[1.3rem] mb-[2vh] text-[#370E00] "
+                >
+                  Sweet
+                </h3>
+                <h3
+                  onClick={() => toogleTab(5)}
+                  className="font-normal text-[1rem] ssm:text-[1.3rem] mb-[2vh] text-[#370E00] "
+                >
+                  Savor
+                </h3>
+              </div>
+            </div>
+          </section>
+          <div className="flex flex-wrap px-[5%] justify-between gap-y-[0] sm:gap-y-[2vh] sm:justify-start lg:gap-x-[3%] lg:gap-y-[5vh]">
+            <FoodPostsCard
+              img={First6}
+              hoverImg={First1}
+              link="/posts3"
+              title="PiePeach & Cream"
+              text="Peach and cream pie is a classic dessert that is perfect for summertime...."
+            />
+            <FoodPostsCard
+              img={First4}
+              hoverImg={First7}
+              link="/posts2"
+              title="Crisp Churros"
+              text="Crisp churros are a delicious fried pastry that originated in Spain but have become a popular... "
+            />
+          </div>
         </div>
 
         {/* Sweet section */}
-        <div
-          id="sweet"
-          className={
-            toogle === 4
-              ? "flex flex-wrap justify-between gap-x-[2%] gap-y-[2vh] lg:gap-x-[3%] lg:gap-y-[5vh] "
-              : "hidden"
-          }
-        >
-          <FoodPostsCard
-            img={First7}
-            hoverImg={First4}
-            link="/posts1"
-            title="Pizza crust"
-            text=" Pizza crust can be made using a sourdough starter or a pizza that is perfect..."
-          />
-          <FoodPostsCard
-            img={First1}
-            hoverImg={First5}
-            link="/posts2"
-            title="Easiest & Tasty Cake"
-            text=" Bake is a beloved dessert that is enjoyed by people all over the world. cake is a staple..."
-          />
-          <FoodPostsCard
-            img={First2}
-            hoverImg={First6}
-            link="/posts3"
-            title="Artisan Bread"
-            text=" Artisan bread is a type of bread that is made using traditional techniques..."
-          />
-          <FoodPostsCard
-            img={First6}
-            hoverImg={First1}
-            link="/posts2"
-            title="PiePeach & Cream"
-            text="Peach and cream pie is a classic dessert that is perfect for summertime...."
-          />
+        <div id="sweet" className={toogle === 4 ? "block " : "hidden"}>
+          {/* mobile recipes header section */}
+          <section className="block mb-[2vh] sm:hidden">
+            <div className="px-[5%] py-[1vh] flex justify-between items-center">
+              <h3 className="font-normal text-[1.2rem] ssm:text-[1.5rem] text-[#370E00] ">
+                Recipes
+              </h3>
+              <RecipeSearch />
+            </div>
+            <div className="px-[5%] relative z-[8] bg-[#DCE7D2] py-[1vh] flex justify-between items-center">
+              <h3
+                onClick={() => toogleTab(4)}
+                className="font-normal text-[1rem] ssm:text-[1.3rem] text-[#370E00] "
+              >
+                Sweet
+              </h3>
+              <FiChevronDown
+                onClick={() => {
+                  handleClick();
+                }}
+                className={`${checkState}`}
+              />
+              <div
+                onClick={() => {
+                  handleClick();
+                }}
+                className={`${checkStates}`}
+              >
+                <h3
+                  onClick={() => toogleTab(1)}
+                  className="font-normal text-[1rem] ssm:text-[1.3rem] mt-[1vh] mb-[2vh] text-[#370E00] "
+                >
+                  All Post
+                </h3>
+                <h3
+                  onClick={() => toogleTab(2)}
+                  className="font-normal text-[1rem] ssm:text-[1.3rem] mb-[2vh] text-[#370E00] "
+                >
+                  Popular
+                </h3>
+                <h3
+                  onClick={() => toogleTab(3)}
+                  className="font-normal text-[1rem] ssm:text-[1.3rem] mb-[2vh] text-[#370E00] "
+                >
+                  Recent
+                </h3>
+                <h3
+                  onClick={() => toogleTab(5)}
+                  className="font-normal text-[1rem] ssm:text-[1.3rem] mb-[2vh] text-[#370E00] "
+                >
+                  Savor
+                </h3>
+              </div>
+            </div>
+          </section>
+          <div className="flex flex-wrap px-[5%] justify-between gap-y-[0] sm:gap-y-[2vh] lg:gap-x-[3%] lg:gap-y-[5vh]">
+            <FoodPostsCard
+              img={First7}
+              hoverImg={First4}
+              link="/posts1"
+              title="Pizza crust"
+              text=" Pizza crust can be made using a sourdough starter or a pizza that is perfect..."
+            />
+            <FoodPostsCard
+              img={First1}
+              hoverImg={First5}
+              link="/posts2"
+              title="Easiest & Tasty Cake"
+              text=" Bake is a beloved dessert that is enjoyed by people all over the world. cake is a staple..."
+            />
+            <FoodPostsCard
+              img={First2}
+              hoverImg={First6}
+              link="/posts3"
+              title="Artisan Bread"
+              text=" Artisan bread is a type of bread that is made using traditional techniques..."
+            />
+            <FoodPostsCard
+              img={First6}
+              hoverImg={First1}
+              link="/posts2"
+              title="PiePeach & Cream"
+              text="Peach and cream pie is a classic dessert that is perfect for summertime...."
+            />
+          </div>
         </div>
 
         {/* Savory section */}
-        <div
-          id="savory"
-          className={
-            toogle === 5
-              ? "flex flex-wrap justify-between gap-x-[2%] gap-y-[2vh] lg:gap-x-[3%] lg:gap-y-[5vh] "
-              : "hidden"
-          }
-        >
-          <FoodPostsCard
-            img={First7}
-            hoverImg={First4}
-            link="/posts3"
-            title="Pizza crust"
-            text=" Pizza crust can be made using a sourdough starter or a pizza that is perfect..."
-          />
+        <div id="savory" className={toogle === 5 ? "block " : "hidden"}>
+          {/* mobile recipes header section */}
+          <section className="block mb-[2vh] sm:hidden">
+            <div className="px-[5%] py-[1vh] flex justify-between items-center">
+              <h3 className="font-normal text-[1.2rem] ssm:text-[1.5rem] text-[#370E00] ">
+                Recipes
+              </h3>
+              <RecipeSearch />
+            </div>
+            <div className="px-[5%] relative z-[8] bg-[#DCE7D2] py-[1vh] flex justify-between items-center">
+              <h3
+                onClick={() => toogleTab(5)}
+                className="font-normal text-[1rem] ssm:text-[1.3rem] text-[#370E00] "
+              >
+                Savor
+              </h3>
+              <FiChevronDown
+                onClick={() => {
+                  handleClick();
+                }}
+                className={`${checkState}`}
+              />
+              <div
+                onClick={() => {
+                  handleClick();
+                }}
+                className={`${checkStates}`}
+              >
+                <h3
+                  onClick={() => toogleTab(1)}
+                  className="font-normal text-[1rem] ssm:text-[1.3rem] mt-[1vh] mb-[2vh] text-[#370E00] "
+                >
+                  All Post
+                </h3>
+                <h3
+                  onClick={() => toogleTab(2)}
+                  className="font-normal text-[1rem] ssm:text-[1.3rem] mb-[2vh] text-[#370E00] "
+                >
+                  Popular
+                </h3>
+                <h3
+                  onClick={() => toogleTab(3)}
+                  className="font-normal text-[1rem] ssm:text-[1.3rem] mb-[2vh] text-[#370E00] "
+                >
+                  Recent
+                </h3>
+                <h3
+                  onClick={() => toogleTab(4)}
+                  className="font-normal text-[1rem] ssm:text-[1.3rem] mb-[2vh] text-[#370E00] "
+                >
+                  Sweet
+                </h3>
+              </div>
+            </div>
+          </section>
+          <div className="flex flex-wrap px-[5%] justify-between gap-y-[0] sm:gap-y-[2vh] lg:gap-x-[3%] lg:gap-y-[5vh]">
+            <FoodPostsCard
+              img={First7}
+              hoverImg={First4}
+              link="/posts3"
+              title="Pizza crust"
+              text=" Pizza crust can be made using a sourdough starter or a pizza that is perfect..."
+            />
+          </div>
         </div>
       </section>
 

@@ -14,11 +14,27 @@ import "swiper/css";
 import "swiper/css/pagination";
 import PostsCard from "../../Components/PostsCard/PostsCard";
 import ShareIcon from "../../Components/ShareIcon/ShareIcon";
+import RecipeSearch from '../Recipes/RecipeSearch';
+import { FiChevronDown } from "react-icons/fi";
+import { useState } from 'react';
 
 export default function PostsBody(props) {
+   // mobile recipes header
+   const [tog, setTog] = useState(true);
+
+   function handleClick() {
+     setTog((tog) => !tog);
+   }
+   let checkState = tog
+     ? "font-normal text-[1rem] ssm:text-[1.3rem] text-[#370E00]"
+     : "font-normal text-[1rem] ssm:text-[1.3rem] text-[#370E00]";
+   let checkStates = tog
+     ? "hidden"
+     : "repMenu absolute px-[5%] bg-[#DCE7D2] top-[100%] right-0 left-0";
+ 
   return (
     <div className="mt-[10vh] sm:mt-[12vh] lg:mt-[15vh]">
-      <section className=" px-[10%] my-[3vh] lg:px-[15%] lg:my-[5vh] sm:pb-[3vh] ">
+      <section className="hidden sm:block px-[10%] my-[3vh] lg:px-[15%] lg:my-[5vh] sm:pb-[3vh] ">
         <div className="flex justify-between ">
           <Link
             to="/recipes"
@@ -53,20 +69,93 @@ export default function PostsBody(props) {
         </div>
       </section>
 
-      <section className="px-[10%] lg:px-[15%] flex justify-between items-center pb-[2vh]">
-        <h1 className="text-[#A62B00] font-normal text-[1.3rem] leading-[120%] ssm:text-[1.8rem] sm:text-[2.3rem] md:text-[2.8rem]  lg: text-[3.2rem]xl:text-[3.5rem]  ">
+      {/* mobile recipes header section */}
+      <section className="block mb-[2vh] sm:hidden">
+            <div className="px-[5%] py-[1vh] flex justify-between items-center">
+              <h3 className="font-normal text-[1.2rem] ssm:text-[1.5rem] text-[#370E00] ">
+                Posts
+              </h3>
+              <RecipeSearch />
+            </div>
+            <div className="px-[5%] relative z-[8] bg-[#DCE7D2] py-[1vh] flex justify-between items-center">
+              <Link to="/recipes">
+              <h3       
+                className="font-normal text-[1rem] ssm:text-[1.3rem] mb-[1vh] text-[#370E00] "
+              >
+                All Posts
+              </h3>
+              </Link>
+              <FiChevronDown
+                onClick={() => {
+                  handleClick();
+                }}
+                className={`${checkState}`}
+              />
+              <div
+                onClick={() => {
+                  handleClick();
+                }}
+                className={`${checkStates}`}
+              >
+                <Link to="/recipes">
+              <h3       
+                className="font-normal text-[1rem] ssm:text-[1.3rem] mb-[2vh] text-[#370E00] "
+              >
+                Popular
+              </h3>
+              </Link>
+              <Link to="/recipes">
+              <h3       
+                className="font-normal text-[1rem] ssm:text-[1.3rem] mb-[2vh] text-[#370E00] "
+              >
+                Recent
+              </h3>
+              </Link>
+              <Link to="/recipes">
+              <h3       
+                className="font-normal text-[1rem] ssm:text-[1.3rem] mb-[2vh] text-[#370E00] "
+              >
+                Sweet
+              </h3>
+              </Link>
+              <Link to="/recipes">
+              <h3       
+                className="font-normal text-[1rem] ssm:text-[1.3rem] mb-[2vh] text-[#370E00] "
+              >
+                Savor
+              </h3>
+              </Link>
+              </div>
+            </div>
+          </section>
+
+      <section className="hidden sm:flex px-[5%] sm:px-[10%] lg:px-[15%] x justify-between items-center pb-[2vh]">
+        <h1 className="text-[#A62B00] font-normal text-[1.3rem] leading-[120%] ssm:text-[1.8rem] sm:text-[2.3rem] md:text-[2.8rem]  lg:text-[3.2rem] xl:text-[3.4rem]  ">
           {props.title}
         </h1>
-        <div className=''>
+        <div>
           <ShareIcon />
         </div>
       </section>
 
-      <section className="px-[10%] lg:px-[15%] font-IBM">
-        <b className="text-[#370E00] font-semibold text-[0.9rem] ssm:text-[1.4rem] md:text-[1.05rem] xl:text-[1.1rem] leading-[150%] ">
+      {/* mobile title section */}
+      <section className='px-[5%] pb-[1vh] sm:hidden'>
+        <div className='flex items-center justify-between pb-[1vh] '>
+          <p className='text-[#370E00] font-IBM font-normal text-[1rem]'>May 22 . 1 min</p>
+        <ShareIcon />
+        </div>
+        <div>
+        <h1 className="text-[#A62B00] font-normal text-[1.3rem] leading-[120%] ssm:text-[1.8rem] sm:text-[2.3rem] md:text-[2.8rem]  lg:text-[3.2rem] xl:text-[3.5rem]  ">
+          {props.title}
+        </h1>
+        </div>
+      </section>
+
+      <section className="px-[5%] sm:px-[10%] lg:px-[15%] font-IBM">
+        <b className="text-[#370E00] font-semibold text-[0.9rem] ssm:text-[1rem] md:text-[1.05rem] xl:text-[1.1rem] leading-[150%] ">
           {props.boldText}
         </b>
-        <p className="text-[#370E00] font-normal text-[0.9rem] ssm:text-[1.4rem] md:text-[1.05rem] xl:text-[1.1rem] leading-[150%] pt-[0.5vh] pb-[2vh]">
+        <p className="text-[#370E00] font-normal text-[0.9rem] ssm:text-[1rem] md:text-[1.05rem] xl:text-[1.1rem] leading-[150%] pt-[0.5vh] pb-[2vh]">
           {props.belowBoldText}
         </p>
 
@@ -103,13 +192,13 @@ export default function PostsBody(props) {
           </Swiper>
         </div>
 
-        <i className="text-[#370E00] font-semibold text-[0.9rem] ssm:text-[1.4rem] md:text-[1.05rem] xl:text-[1.1rem] leading-[150%]">
+        <i className="text-[#370E00] font-semibold text-[0.9rem] ssm:text-[1rem] md:text-[1.05rem] xl:text-[1.1rem] leading-[150%]">
           {props.italicText}
         </i>
-        <p className="text-[#370E00] font-normal text-[0.9rem] ssm:text-[1.4rem] md:text-[1.05rem] xl:text-[1.1rem] text-justify leading-[150%] pt-[1vh] pb-[1vh]">
+        <p className="text-[#370E00] font-normal text-[0.9rem] ssm:text-[1rem] md:text-[1.05rem] xl:text-[1.1rem] text-justify leading-[150%] pt-[1vh] pb-[1vh]">
           {props.aboveImageText1}
         </p>
-        <p className="text-[#370E00] font-normal text-[0.9rem] ssm:text-[1.4rem] md:text-[1.05rem] xl:text-[1.1rem] text-justify leading-[150%] pb-[2vh]">
+        <p className="text-[#370E00] font-normal text-[0.9rem] ssm:text-[1rem] md:text-[1.05rem] xl:text-[1.1rem] text-justify leading-[150%] pb-[2vh]">
           {props.aboveImageText2}
         </p>
         <Poststags />
