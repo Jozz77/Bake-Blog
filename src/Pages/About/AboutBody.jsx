@@ -71,7 +71,7 @@ export default function AboutBody() {
       </section>
 
       <section className="px-[5%] py-[3vh]">
-        <h2 className="text-[#A62B00] font-normal text-[1.5rem] leading-[120%] mb-[1vh] ssm:mb-[2vh] ssm:text-[1.9rem] md:text-[2rem]  lg:text-[2.3rem] xl:text-[2.6rem] ">
+        <h2 className="text-[#A62B00] font-normal text-[1.5rem] leading-[120%] mb-[2vh] ssm:mb-[2vh] ssm:text-[1.9rem] md:text-[2rem]  lg:text-[2.3rem] xl:text-[2.6rem] ">
           Things I Do{" "}
         </h2>
 
