@@ -175,7 +175,7 @@ export default function Header() {
         <section
           className={
             isNavOpen
-              ? "showMenu overflow-hidden font-Playfair absolute h-[100vh] w-[100%] flex flex-col items-center  bg-[#F3F6F1] font-IBM top-[0] right-0 w-[50%] py-[1.5vh] "
+              ? "showMenu overflow-hidden font-Playfair absolute h-[100vh] w-full flex flex-col items-center bg-[#F3F6F1] top-[0] right-0 py-[1.5vh] "
               : "hideMenu"
           }
         >
