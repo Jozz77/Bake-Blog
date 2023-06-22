@@ -2,8 +2,24 @@ import { Link } from "react-router-dom";
 import Image2 from "./Assets/Image2.png";
 import Braunie from "./Assets/Braunie.png";
 import "./SomethingOven.css";
+import { useEffect, useState } from "react";
+
+const MiddleFoodArray = [Braunie, Image2]
 
 export default function SomethingOven() {
+  const [currentImage, setCurrentImage] = useState(0);
+
+  // switching the Middle food image 
+ useEffect(() => {
+   const switchImage = setInterval(() => {
+     if (currentImage === MiddleFoodArray.length - 1) {
+         setCurrentImage(0)
+     } else (
+       setCurrentImage(currentImage + 1)
+     )
+   }, 3000);
+   return (() => clearInterval(switchImage))
+ },[currentImage])
   return (
     <div>
       <section className="hidden sm:flex-column px-[5%]  overflow-hidden text-center  justify-between bg-[#DCE7D2] mt-[2vh] sm:flex">
@@ -45,15 +61,12 @@ export default function SomethingOven() {
           </button>
         </Link>
       </div>
-      <div className=" relative pb-[10vh] ssm:pb-[25vh] flex justify-center items-center ">
+      <div className=" relative pb-[20vh] ssm:pb-[25vh] flex justify-center items-center ">
         <section className=" cursor-pointer">
-          <div className=" absolute top-[0%] left-[0%]  right-[0%] ">
-            <img src={Braunie} className="w-[20%]  mx-[auto] my-[0]" alt="Braunie Image" />
-          </div>
           <div className="flex justify-center items-center">
             <img
-              className="  mx-[auto] my-[0] w-[40%] opacity-1 absolute top-[0%] left-[0%]  right-[0%] sm:my-[auto] "
-              src={Image2}
+              className="Image mx-[auto] my-[0] w-[35%] opacity-1 absolute top-[0%] left-[0%]  right-[0%] sm:my-[auto] "
+              src={MiddleFoodArray[currentImage]}
               alt="Girl with cakes"
             />
           </div>

@@ -128,7 +128,7 @@ export default function Header() {
         </section>
 
         <section className="w-[60%] flex  justify-end  items-center">
-          <div className="overflow-hidden mr-[5%] pr-[20%}">
+          <div className="overflow-hidden mr-[10%] pr-[20%}">
             <AiOutlineSearch
               onClick={() => {
                 handleClick();
@@ -150,7 +150,7 @@ export default function Header() {
               />
             </div>
           </div>
-          <div className="mr-[5%]">
+          <div className="mr-[10%]">
             <img className="w-full" src={Profile} alt="Profile" />
           </div>
           <div>

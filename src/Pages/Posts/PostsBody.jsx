@@ -141,7 +141,7 @@ export default function PostsBody(props) {
       {/* mobile title section */}
       <section className='px-[5%] pb-[1vh] sm:hidden'>
         <div className='flex items-center justify-between pb-[1vh] '>
-          <p className='text-[#370E00] font-IBM font-normal text-[1rem]'>May 22 . 1 min</p>
+          <p className='text-[#370E00] font-IBM font-normal text-[0.8rem] ssm:ext-[1rem]'>May 22 . 1 min</p>
         <ShareIcon />
         </div>
         <div>

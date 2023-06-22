@@ -15,13 +15,16 @@
 .Img-container:hover .Img {
     animation: scaleImg 0.5s ease forwards;
 }
+.Image{
+    animation: moveHoverImg 0.5s ease forwards;
+}
 @keyframes moveHoverImg {
     0%{
-        transform: translateY(0%);
+        transform: translateY(200%);
         opacity: 0;
     }
     100%{
-        transform: translateY(200%);
+        transform: translateY(0%);
         opacity: 1;
     }
 }

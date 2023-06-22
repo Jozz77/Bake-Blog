@@ -45,10 +45,10 @@ export default function AboutBody() {
         </div>
 
         <div className=" bg-[#F3F6F1] px-[5%] w-[100%] py-[1vh]">
-          <h2 className="text-[#A62B00] pb-[1vh] pr-[5%] font-normal text-[1.2rem] leading-[120%] w-[95%] ssm:text-[1.6rem] ">
+          <h2 className="text-[#A62B00] pb-[1vh] pr-[5%] font-normal text-[1.4rem] leading-[120%] w-[95%] ssm:text-[1.6rem] ">
             Sugar, Spice and Everything Nice
           </h2>
-          <h2 className="text-[rgb(166,43,0)] font-IBM font-medium text-[1rem] leading-[120%] mb-[0.7vh] ssm:text-[1.3rem]">
+          <h2 className="text-[rgb(166,43,0)] font-IBM font-medium text-[1rem] leading-[120%] mb-[1vh] ssm:text-[1.3rem]">
             Hello, I’m Roberta
           </h2>
           <p className=" text-[#370E00] font-IBM font-normal text-[0.8rem] ssm:text-[1rem] leading-[150%] ">

@@ -52,7 +52,7 @@ export default function HomePageBody() {
 
       </section>
 
-      <section className="px-[5%] mt-[1vh] lg:mt-[2vh] xl:mt-[4vh]">
+      <section className="px-[0%] sm:px-[5%] mt-[1vh] lg:mt-[2vh] xl:mt-[4vh]">
         <div className="flex justify-center py-[1.5vh] gap-[2%] md:py-[2vh] lg:py-[3vh] ">
           <p className="text-[#A62B00] overflow-hidden font-normal text-[1.7rem] leading-[150%] w-[40%] ssm:w-[30%] sm:w-[20%] md:text-[2rem] md:w-[20%] lg:w-[19%] xl:w-[18%] lg:text-[2.6rem] xl:text-[3rem]">
           <TextTransition springConfig={presets.gentle}>{TEXTS[index % TEXTS.length]}</TextTransition>

@@ -6,7 +6,7 @@ import LoveIcon from "../LoveIcon/LoveIcon";
 export default function FoodCard(props) {
 
   return (
-    <div className="FoodCard mb-[2vh] bg-[#E8EFE1] w-[100%] px-[1.5%] py-[1vh] sm:mb-[0] sm:w-[32%] lg:w-[30%] lg:py-[2vh]">
+    <div className="FoodCard mb-[2vh] bg-[#E8EFE1] mx-[auto] w-[90%] px-[1.5%] py-[1vh] sm:mb-[0] sm:w-[32%] lg:w-[30%] lg:py-[2vh]">
       <Link to={props.link}>
         <div>
           <img className="w-full" src={props.img} alt="" />
