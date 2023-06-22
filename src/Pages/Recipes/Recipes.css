@@ -1,0 +1,12 @@
+.repMenu{
+    display: block;
+    transform: translateX(0%);
+    animation: slideIn 0.5s linear;
+}
+@keyframes slideIn {
+    0%{
+      transform: translateX(-100%);
+      z-index: 20;
+      opacity: 0;
+    }
+  }

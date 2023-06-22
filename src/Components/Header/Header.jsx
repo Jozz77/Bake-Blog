@@ -113,7 +113,7 @@ export default function Header() {
       </div>
 
       {/* mobile nav */}
-      <div className="flex bg-[#F3F6F1] px-[5%] py-[1.5vh] z-10 justify-between items-center w-full fixed top-0 md:hidden">
+      <div className="flex bg-[#F3F6F1] px-[5%] py-[1.5vh] z-10 justify-between items-center z-10 w-full fixed top-0 md:hidden">
         <section className="flex items-center w-[60%] ssm:w-[65%] sm:w-[40%]">
           <Link to="/" className="w-[25%] mr-[5%] ssm:w-[27%] sm:w-[25%]">
             <div>
