@@ -56,7 +56,7 @@ export default function Footer() {
         </div>
       </section>
       <section className="mt-[3vh] lg:mt-[5vh]">
-        <p className="text-normal text-center font-IBM text-[0.95rem] sm:text-[0.85rem]  sm:text-left md:text-[1rem] leading-[150%]">@2023. Designed by <Link to="https://hijoygirl.com" target="_blank" className=" hover:text-[#A62B00]" >hijoygirl.com</Link> </p>
+        <p className="text-normal text-center font-IBM text-[0.95rem] sm:text-[0.85rem]  sm:text-left md:text-[1rem] leading-[150%]">@2023, Designed by <Link to="https://hijoygirl.com" target="_blank" className=" hover:text-[#A62B00]" >hijoygirl.com</Link> </p>
       </section>
     </footer>
   );
